@@ -1,4 +1,4 @@
-package main
+package host
 
 import (
 	"fmt"
@@ -57,7 +57,7 @@ func (c *HostInfoCache) SetIP(ip string) {
 	c.Unlock()
 }
 
-func InitHostInfo() {
+func InitHostInfo(update bool) {
 	hostname, err := os.Hostname()
 	if err != nil {
 		panic("初始化hostname失败")
@@ -73,7 +73,9 @@ func InitHostInfo() {
 		ip:   fmt.Sprint(ip),
 	}
 
-	go HostInfo.update()
+	if update {
+		go HostInfo.update()
+	}
 }
 
 func (c *HostInfoCache) update() {

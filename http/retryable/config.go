@@ -2,13 +2,11 @@ package retryable
 
 import (
 	"net/url"
-	"runtime"
 	"time"
 )
 
 const (
 	DialTimeout           = 5 * time.Second
-	DialKeepAlive         = 30 * time.Second
 	MaxIdleConnections    = 100
 	IdleConnTimeout       = 90 * time.Second
 	TLSHandshakeTimeout   = 10 * time.Second
@@ -45,8 +43,6 @@ func WithDialTimeout(dialTimeout string) Options {
 	return func(config *HttpClientConfig) {
 		if d, err := time.ParseDuration(dialTimeout); err == nil {
 			config.DialTimeout = d
-		} else {
-			config.DialTimeout = DialTimeout
 		}
 	}
 }
@@ -55,8 +51,6 @@ func WithDialKeepAlive(dialKeepAlive string) Options {
 	return func(config *HttpClientConfig) {
 		if d, err := time.ParseDuration(dialKeepAlive); err == nil {
 			config.DialKeepAlive = d
-		} else {
-			config.DialKeepAlive = DialKeepAlive
 		}
 	}
 }
@@ -65,8 +59,6 @@ func WithMaxIdleConns(maxIdleConns int) Options {
 	return func(config *HttpClientConfig) {
 		if maxIdleConns > 0 {
 			config.MaxIdleConns = maxIdleConns
-		} else {
-			config.MaxIdleConns = MaxIdleConnections
 		}
 	}
 }
@@ -75,8 +67,6 @@ func WithMaxIdleConnsPerHost(maxIdleConnsPerHost int) Options {
 	return func(config *HttpClientConfig) {
 		if maxIdleConnsPerHost > 0 {
 			config.MaxIdleConnsPerHost = maxIdleConnsPerHost
-		} else {
-			config.MaxIdleConnsPerHost = runtime.NumGoroutine()
 		}
 	}
 }
@@ -85,8 +75,6 @@ func WithIdleConnTimeout(idleConnTimeout string) Options {
 	return func(config *HttpClientConfig) {
 		if d, err := time.ParseDuration(idleConnTimeout); err == nil {
 			config.IdleConnTimeout = d
-		} else {
-			config.IdleConnTimeout = IdleConnTimeout
 		}
 	}
 }
@@ -95,8 +83,6 @@ func WithTLSHandshakeTimeout(tlsHandshakeTimeout string) Options {
 	return func(config *HttpClientConfig) {
 		if d, err := time.ParseDuration(tlsHandshakeTimeout); err == nil {
 			config.TLSHandshakeTimeout = d
-		} else {
-			config.TLSHandshakeTimeout = TLSHandshakeTimeout
 		}
 	}
 }
@@ -105,8 +91,6 @@ func WithExpectContinueTimeout(expectContinueTimeout string) Options {
 	return func(config *HttpClientConfig) {
 		if d, err := time.ParseDuration(expectContinueTimeout); err == nil {
 			config.ExpectContinueTimeout = d
-		} else {
-			config.ExpectContinueTimeout = ExpectContinueTimeout
 		}
 	}
 }
