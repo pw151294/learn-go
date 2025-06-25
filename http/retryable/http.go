@@ -10,24 +10,36 @@ import (
 
 const DefaultKeepAlive = 90 * time.Second
 
-func newHttpClient(opt *Options) *http.Client {
-	if opt == nil {
+func newHttpClient(clientConfig *HttpClientConfig) *http.Client {
+	if clientConfig == nil {
 		return &http.Client{
 			Transport: defaultTransport(),
 		}
 	}
 
 	return &http.Client{
-		Transport: newCliTransport(opt),
+		Transport: newCliTransport(clientConfig),
 	}
+}
+
+type Config struct {
+	DialTimeout           string `json:"dial_timeout"`
+	DialKeepAlive         string `json:"dial_keep_alive"`
+	MaxIdleConns          int    `json:"max_idle_conns"`
+	MaxIdleConnsPerHost   int    `json:"max_idle_conns_per_host"`
+	IdleConnTimeout       string `json:"idle_conn_timeout"`
+	TlsHandshakeTimeout   string `json:"tls_handshake_timeout"`
+	ExpectContinueTimeout string `json:"expect_continue_timeout"`
+	InsecureSkipVerify    bool   `json:"insecure_skip_verify"`
+	ProxyUrl              string `json:"proxy_url"`
 }
 
 func defaultTransport() *http.Transport {
 	return newCliTransport(defaultOptions())
 }
 
-func defaultOptions() *Options {
-	return &Options{
+func defaultOptions() *HttpClientConfig {
+	return &HttpClientConfig{
 		DialTimeout:           30 * time.Second,
 		DialKeepAlive:         DefaultKeepAlive,
 		MaxIdleConns:          100,
@@ -38,56 +50,56 @@ func defaultOptions() *Options {
 	}
 }
 
-func newCliTransport(opt *Options) *http.Transport {
+func newCliTransport(clientConfig *HttpClientConfig) *http.Transport {
 	var (
 		proxy func(*http.Request) (*url.URL, error)
 	)
 
-	if opt.ProxyURL != nil {
-		proxy = http.ProxyURL(opt.ProxyURL)
+	if clientConfig.ProxyURL != nil {
+		proxy = http.ProxyURL(clientConfig.ProxyURL)
 	}
 
 	return &http.Transport{
 		Proxy: proxy,
 
 		MaxIdleConns: func() int {
-			if opt.MaxIdleConns == 0 {
+			if clientConfig.MaxIdleConns == 0 {
 				return 100
 			}
-			return opt.MaxIdleConns
+			return clientConfig.MaxIdleConns
 		}(),
 
 		TLSClientConfig: func() *tls.Config {
-			if opt.InsecureSkipVerify {
+			if clientConfig.InsecureSkipVerify {
 				return &tls.Config{InsecureSkipVerify: true} //nolint:gosec
 			}
 			return &tls.Config{InsecureSkipVerify: false} //nolint:gosec
 		}(),
 
 		MaxIdleConnsPerHost: func() int {
-			if opt.MaxIdleConnsPerHost == 0 {
+			if clientConfig.MaxIdleConnsPerHost == 0 {
 				return runtime.NumGoroutine()
 			}
-			return opt.MaxIdleConnsPerHost
+			return clientConfig.MaxIdleConnsPerHost
 		}(),
 
 		IdleConnTimeout: func() time.Duration {
-			if opt.IdleConnTimeout > time.Duration(0) {
-				return opt.IdleConnTimeout
+			if clientConfig.IdleConnTimeout > time.Duration(0) {
+				return clientConfig.IdleConnTimeout
 			}
 			return DefaultKeepAlive
 		}(),
 
 		TLSHandshakeTimeout: func() time.Duration {
-			if opt.TLSHandshakeTimeout > time.Duration(0) {
-				return opt.TLSHandshakeTimeout
+			if clientConfig.TLSHandshakeTimeout > time.Duration(0) {
+				return clientConfig.TLSHandshakeTimeout
 			}
 			return 10 * time.Second
 		}(),
 
 		ExpectContinueTimeout: func() time.Duration {
-			if opt.ExpectContinueTimeout > time.Duration(0) {
-				return opt.ExpectContinueTimeout
+			if clientConfig.ExpectContinueTimeout > time.Duration(0) {
+				return clientConfig.ExpectContinueTimeout
 			}
 			return time.Second
 		}(),

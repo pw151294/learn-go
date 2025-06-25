@@ -30,3 +30,29 @@
 2025-06-18 13:13:41	INFO	cmd/main.go:29	shutdown gracefully......
 2025-06-18 13:41:27	INFO	config/bootstrap.go:26	init cmdb agent config success!
 2025-06-18 13:41:30	INFO	cmd/main.go:29	shutdown gracefully......
+2025-06-25 10:15:37	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 0, "url": "https://www.123.com/"}
+2025-06-25 10:17:13	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 0, "url": "https://www.123.com/"}
+2025-06-25 10:17:13	INFO	retryable/client.go:47	retry failed, waiting for next try	{"retryNum": 0}
+2025-06-25 10:17:14	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 1, "url": "https://www.123.com/"}
+2025-06-25 10:17:15	INFO	retryable/client.go:47	retry failed, waiting for next try	{"retryNum": 1}
+2025-06-25 10:17:16	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 2, "url": "https://www.123.com/"}
+2025-06-25 10:17:16	INFO	retryable/client.go:47	retry failed, waiting for next try	{"retryNum": 2}
+2025-06-25 10:17:17	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 3, "url": "https://www.123.com/"}
+2025-06-25 10:19:19	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 0, "url": "https://www.123.com/"}
+2025-06-25 10:19:19	ERROR	go-retryablehttp@v0.7.8/client.go:735	request failed	{"error": "Get \"https://www.123.com/\": unexpected EOF", "method": "GET", "url": "https://www.123.com/"}
+2025-06-25 10:19:19	INFO	retryable/client.go:47	retry failed, waiting for next try	{"retryNum": 0}
+2025-06-25 10:19:20	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 1, "url": "https://www.123.com/"}
+2025-06-25 10:19:21	ERROR	go-retryablehttp@v0.7.8/client.go:735	request failed	{"error": "Get \"https://www.123.com/\": unexpected EOF", "method": "GET", "url": "https://www.123.com/"}
+2025-06-25 10:19:21	INFO	retryable/client.go:47	retry failed, waiting for next try	{"retryNum": 1}
+2025-06-25 10:19:22	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 2, "url": "https://www.123.com/"}
+2025-06-25 10:19:22	ERROR	go-retryablehttp@v0.7.8/client.go:735	request failed	{"error": "Get \"https://www.123.com/\": unexpected EOF", "method": "GET", "url": "https://www.123.com/"}
+2025-06-25 10:19:22	INFO	retryable/client.go:47	retry failed, waiting for next try	{"retryNum": 2}
+2025-06-25 10:19:23	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 3, "url": "https://www.123.com/"}
+2025-06-25 10:19:23	ERROR	go-retryablehttp@v0.7.8/client.go:735	request failed	{"error": "Get \"https://www.123.com/\": unexpected EOF", "method": "GET", "url": "https://www.123.com/"}
+2025-06-25 10:20:24	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 0, "url": "https://www.123.com/"}
+2025-06-25 10:20:24	INFO	retryable/client.go:47	retry failed, waiting for next try	{"retryNum": 0}
+2025-06-25 10:20:25	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 1, "url": "https://www.123.com/"}
+2025-06-25 10:20:26	INFO	retryable/client.go:47	retry failed, waiting for next try	{"retryNum": 1}
+2025-06-25 10:20:27	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 2, "url": "https://www.123.com/"}
+2025-06-25 10:20:27	INFO	retryable/client.go:47	retry failed, waiting for next try	{"retryNum": 2}
+2025-06-25 10:20:28	INFO	retryable/client.go:44	begin retry ...	{"retryNum": 3, "url": "https://www.123.com/"}
