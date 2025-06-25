@@ -10,7 +10,7 @@ import (
 const filepath = "http/retryable/config.json"
 
 func TestRetryableHttpClient(t *testing.T) {
-	zap.InitLogger()
+	zap.InitLogger(zap.LogPath)
 	InitRetryableHttpClient(filepath)
 
 	req, err := http.NewRequest(http.MethodGet, "https://www.123.com/", nil)

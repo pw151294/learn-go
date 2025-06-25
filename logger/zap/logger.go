@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-const logPath = "middleware/nacos/logs/nacos.log"
+const LogPath = "logger/logs/app.log"
 
 var log *Logger
 
@@ -17,15 +17,15 @@ type Logger struct {
 	_logger *zap.Logger
 }
 
-func InitLogger() {
+func InitLogger(logPath string) {
 	encoder := NewEncoder()
-	writerSyncer := NewLogWriter()
+	writerSyncer := NewLogWriter(logPath)
 	core := zapcore.NewCore(encoder, writerSyncer, zapcore.InfoLevel)
 
 	log = &Logger{_logger: zap.New(core, zap.AddCaller(), zap.AddCallerSkip(1))}
 }
 
-func NewLogWriter() zapcore.WriteSyncer {
+func NewLogWriter(logPath string) zapcore.WriteSyncer {
 	if err := os.MkdirAll(filepath.Dir(logPath), os.ModePerm); err != nil {
 		panic(err)
 	}

@@ -9,7 +9,7 @@ func add(k, v int, schema map[int]int) {
 }
 
 func main() {
-	zap.InitLogger()
+	zap.InitLogger(zap.LogPath)
 
 	m := make(map[int]int)
 	add(1, 1, m)

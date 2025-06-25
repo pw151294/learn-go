@@ -15,7 +15,7 @@ var configPath = flag.String("config", "config/cmd/config", "Path to the config 
 func main() {
 	flag.Parse()
 
-	zap.InitLogger()
+	zap.InitLogger(zap.LogPath)
 
 	cfgPath := filepath.Join(*configPath, "config.toml")
 	if err := config.InitConfig(cfgPath); err != nil {

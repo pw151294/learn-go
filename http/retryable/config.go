@@ -2,6 +2,7 @@ package retryable
 
 import (
 	"net/url"
+	"runtime"
 	"time"
 )
 
@@ -9,7 +10,6 @@ const (
 	DialTimeout           = 5 * time.Second
 	DialKeepAlive         = 30 * time.Second
 	MaxIdleConnections    = 100
-	MaxIdleConnsPerHost   = 10
 	IdleConnTimeout       = 90 * time.Second
 	TLSHandshakeTimeout   = 10 * time.Second
 	ExpectContinueTimeout = 10 * time.Second
@@ -76,7 +76,7 @@ func WithMaxIdleConnsPerHost(maxIdleConnsPerHost int) Options {
 		if maxIdleConnsPerHost > 0 {
 			config.MaxIdleConnsPerHost = maxIdleConnsPerHost
 		} else {
-			config.MaxIdleConnsPerHost = MaxIdleConnsPerHost
+			config.MaxIdleConnsPerHost = runtime.NumGoroutine()
 		}
 	}
 }

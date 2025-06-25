@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	zap.InitLogger()
+	zap.InitLogger(zap.LogPath)
 
 	s := NewScheduler(3, 100)
 

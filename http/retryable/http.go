@@ -40,13 +40,13 @@ func defaultTransport() *http.Transport {
 
 func defaultOptions() *HttpClientConfig {
 	return &HttpClientConfig{
-		DialTimeout:           30 * time.Second,
+		DialTimeout:           DialTimeout,
 		DialKeepAlive:         DefaultKeepAlive,
-		MaxIdleConns:          100,
+		MaxIdleConns:          MaxIdleConnections,
 		MaxIdleConnsPerHost:   runtime.NumGoroutine(),
-		IdleConnTimeout:       DefaultKeepAlive, // keep the same with keep-aliva
-		TLSHandshakeTimeout:   10 * time.Second,
-		ExpectContinueTimeout: time.Second,
+		IdleConnTimeout:       IdleConnTimeout, // keep the same with keep-aliva
+		TLSHandshakeTimeout:   TLSHandshakeTimeout,
+		ExpectContinueTimeout: ExpectContinueTimeout,
 	}
 }
 
@@ -64,7 +64,7 @@ func newCliTransport(clientConfig *HttpClientConfig) *http.Transport {
 
 		MaxIdleConns: func() int {
 			if clientConfig.MaxIdleConns == 0 {
-				return 100
+				return MaxIdleConnections
 			}
 			return clientConfig.MaxIdleConns
 		}(),
@@ -94,14 +94,14 @@ func newCliTransport(clientConfig *HttpClientConfig) *http.Transport {
 			if clientConfig.TLSHandshakeTimeout > time.Duration(0) {
 				return clientConfig.TLSHandshakeTimeout
 			}
-			return 10 * time.Second
+			return TLSHandshakeTimeout
 		}(),
 
 		ExpectContinueTimeout: func() time.Duration {
 			if clientConfig.ExpectContinueTimeout > time.Duration(0) {
 				return clientConfig.ExpectContinueTimeout
 			}
-			return time.Second
+			return ExpectContinueTimeout
 		}(),
 	}
 }

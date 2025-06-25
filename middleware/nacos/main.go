@@ -14,7 +14,7 @@ func main() {
 	flag.Parse()
 
 	// 初始化nacos配置
-	zap.InitLogger()
+	zap.InitLogger(zap.LogPath)
 	if err := InitNacosConfig(*cfgPath); err != nil {
 		log.Fatal(err)
 	}
