@@ -1,0 +1,11 @@
+{
+  "app_name": "learn-go",
+  "ip_addr": "127.0.0.1",
+  "username": "nacos",
+  "password": "nacos",
+  "context_path":"/nacos",
+  "port": 8848,
+  "scheme":"http",
+  "namespace_id": "cmdb",
+  "log_path": "middleware/nacos/logs"
+}

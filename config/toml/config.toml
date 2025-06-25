@@ -1,0 +1,11 @@
+[OneAgent]
+id = "0x1234"  # 注意是16进制的四位数
+name = "Test-Weipan4"
+log_path = "/data/weipan4/cmdb/oneagent-linux-amd64/oneagent/oneagent.log"
+master_server = "localhost:7788"
+
+[OneMaster]
+cmdb_server = "172.29.230.157:5000"
+api_key = "7fb5dca80fb440fea6541afe90fd8a6a"
+api_secret = "Q0yHeLsBCzZXKra*u%imEV?8jPl2Ao^&"
+licence_bind_ip = "172.30.34.73"

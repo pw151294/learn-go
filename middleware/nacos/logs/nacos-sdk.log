@@ -1,0 +1,1174 @@
+2025-06-17T13:36:09.876+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55947
+2025-06-17T13:36:09.877+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=b622061b-a5a8-4734-aab3-b54f1283ae8c)
+2025-06-17T13:36:09.877+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T13:36:09.877+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T13:36:09.877+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T13:36:09.877+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] b622061b-a5a8-4734-aab3-b54f1283ae8c try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T13:36:09.877+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T13:36:09.877+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T13:36:09.877+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T13:36:09.878+0800	INFO	util/common.go:96	Local IP:10.5.162.111
+2025-06-17T13:36:09.985+0800	INFO	rpc/rpc_client.go:337	b622061b-a5a8-4734-aab3-b54f1283ae8c success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750138569883_0:0:0:0:0:0:0:1_54206
+2025-06-17T13:36:09.985+0800	INFO	rpc/rpc_client.go:486	b622061b-a5a8-4734-aab3-b54f1283ae8c notify connected event to listeners , connectionId=1750138569883_0:0:0:0:0:0:0:1_54206
+2025-06-17T13:36:09.985+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-17T13:36:09.985+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-d8996249-c063-43fd-a0e4-cbb416a5a7e1)
+2025-06-17T13:36:09.986+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T13:36:09.986+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T13:36:09.986+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T13:36:09.986+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-d8996249-c063-43fd-a0e4-cbb416a5a7e1 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T13:36:09.986+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T13:36:09.986+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T13:36:09.986+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T13:36:10.090+0800	INFO	rpc/rpc_client.go:337	config-0-d8996249-c063-43fd-a0e4-cbb416a5a7e1 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750138569987_0:0:0:0:0:0:0:1_54207
+2025-06-17T13:36:10.090+0800	INFO	rpc/rpc_client.go:486	config-0-d8996249-c063-43fd-a0e4-cbb416a5a7e1 notify connected event to listeners , connectionId=1750138569987_0:0:0:0:0:0:0:1_54207
+2025-06-17T13:36:10.090+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-17T13:36:10.094+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-17T13:36:10.094+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T13:36:10.095+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T13:44:05.059+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55368
+2025-06-17T13:44:05.060+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=28f7721e-94f9-4d8f-b2ec-061a3abd7d83)
+2025-06-17T13:44:05.060+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T13:44:05.060+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T13:44:05.060+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T13:44:05.060+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 28f7721e-94f9-4d8f-b2ec-061a3abd7d83 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T13:44:05.060+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T13:44:05.060+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T13:44:05.060+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T13:44:05.061+0800	INFO	util/common.go:96	Local IP:10.5.162.111
+2025-06-17T13:44:05.167+0800	INFO	rpc/rpc_client.go:337	28f7721e-94f9-4d8f-b2ec-061a3abd7d83 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750139045064_0:0:0:0:0:0:0:1_55470
+2025-06-17T13:44:05.167+0800	INFO	rpc/rpc_client.go:486	28f7721e-94f9-4d8f-b2ec-061a3abd7d83 notify connected event to listeners , connectionId=1750139045064_0:0:0:0:0:0:0:1_55470
+2025-06-17T13:44:05.167+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-17T13:44:05.168+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-538d4748-9c95-436c-81da-a409da0c75d8)
+2025-06-17T13:44:05.168+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T13:44:05.168+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T13:44:05.168+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T13:44:05.168+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-538d4748-9c95-436c-81da-a409da0c75d8 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T13:44:05.168+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T13:44:05.169+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T13:44:05.169+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T13:44:05.277+0800	INFO	rpc/rpc_client.go:337	config-0-538d4748-9c95-436c-81da-a409da0c75d8 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750139045174_0:0:0:0:0:0:0:1_55471
+2025-06-17T13:44:05.277+0800	INFO	rpc/rpc_client.go:486	config-0-538d4748-9c95-436c-81da-a409da0c75d8 notify connected event to listeners , connectionId=1750139045174_0:0:0:0:0:0:0:1_55471
+2025-06-17T13:44:05.277+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-17T13:44:05.281+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-17T13:44:16.201+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T13:44:16.201+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T13:45:23.947+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55014
+2025-06-17T13:45:23.949+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=4b2ef6ee-b20f-409a-8019-77f52b0b942f)
+2025-06-17T13:45:23.949+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T13:45:23.949+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T13:45:23.949+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T13:45:23.949+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 4b2ef6ee-b20f-409a-8019-77f52b0b942f try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T13:45:23.949+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T13:45:23.949+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T13:45:23.949+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T13:45:23.950+0800	INFO	util/common.go:96	Local IP:10.5.162.111
+2025-06-17T13:45:24.059+0800	INFO	rpc/rpc_client.go:337	4b2ef6ee-b20f-409a-8019-77f52b0b942f success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750139123956_0:0:0:0:0:0:0:1_55693
+2025-06-17T13:45:24.059+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-17T13:45:24.059+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-3c0c86c8-6825-49ae-90b1-9c23b49cbe42)
+2025-06-17T13:45:24.060+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T13:45:24.060+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T13:45:24.060+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T13:45:24.060+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-3c0c86c8-6825-49ae-90b1-9c23b49cbe42 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T13:45:24.060+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T13:45:24.060+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T13:45:24.060+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T13:45:24.166+0800	INFO	rpc/rpc_client.go:337	config-0-3c0c86c8-6825-49ae-90b1-9c23b49cbe42 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750139124063_0:0:0:0:0:0:0:1_55694
+2025-06-17T13:45:24.166+0800	INFO	rpc/rpc_client.go:486	config-0-3c0c86c8-6825-49ae-90b1-9c23b49cbe42 notify connected event to listeners , connectionId=1750139124063_0:0:0:0:0:0:0:1_55694
+2025-06-17T13:45:24.166+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-17T13:45:24.170+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-17T13:45:24.171+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T13:45:24.171+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:01:25.189+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55003
+2025-06-17T14:01:25.190+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=a6a703d0-5a4b-4ef2-b30d-ef727199778d)
+2025-06-17T14:01:25.190+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:01:25.190+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:01:25.190+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:01:25.190+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] a6a703d0-5a4b-4ef2-b30d-ef727199778d try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:01:25.190+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:01:25.190+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:01:25.190+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:01:25.194+0800	INFO	util/common.go:96	Local IP:10.5.162.111
+2025-06-17T14:01:25.316+0800	INFO	rpc/rpc_client.go:337	a6a703d0-5a4b-4ef2-b30d-ef727199778d success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750140085209_0:0:0:0:0:0:0:1_58297
+2025-06-17T14:01:25.317+0800	INFO	rpc/rpc_client.go:486	a6a703d0-5a4b-4ef2-b30d-ef727199778d notify connected event to listeners , connectionId=1750140085209_0:0:0:0:0:0:0:1_58297
+2025-06-17T14:01:47.897+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-17T14:01:47.897+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-9f795564-7291-4f43-831a-405d4d79c1c0)
+2025-06-17T14:01:47.897+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:01:47.897+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:01:47.897+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:01:47.898+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-9f795564-7291-4f43-831a-405d4d79c1c0 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:01:47.898+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:01:47.898+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:01:47.898+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:01:48.004+0800	INFO	rpc/rpc_client.go:337	config-0-9f795564-7291-4f43-831a-405d4d79c1c0 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750140107901_0:0:0:0:0:0:0:1_58355
+2025-06-17T14:01:48.004+0800	INFO	rpc/rpc_client.go:486	config-0-9f795564-7291-4f43-831a-405d4d79c1c0 notify connected event to listeners , connectionId=1750140107901_0:0:0:0:0:0:0:1_58355
+2025-06-17T14:01:48.004+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-17T14:01:48.014+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-17T14:01:49.995+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:01:49.995+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:02:03.102+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55036
+2025-06-17T14:02:03.103+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=9efc7393-4867-4610-8cf7-85b8cebab810)
+2025-06-17T14:02:03.103+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:02:03.103+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:02:03.103+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:02:03.103+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 9efc7393-4867-4610-8cf7-85b8cebab810 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:02:03.103+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:02:03.103+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:02:03.103+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:02:03.104+0800	INFO	util/common.go:96	Local IP:10.5.162.111
+2025-06-17T14:02:03.209+0800	INFO	rpc/rpc_client.go:337	9efc7393-4867-4610-8cf7-85b8cebab810 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750140123106_0:0:0:0:0:0:0:1_58395
+2025-06-17T14:02:03.210+0800	INFO	rpc/rpc_client.go:486	9efc7393-4867-4610-8cf7-85b8cebab810 notify connected event to listeners , connectionId=1750140123106_0:0:0:0:0:0:0:1_58395
+2025-06-17T14:02:31.818+0800	INFO	rpc/grpc_client.go:271	connectionId 1750140123106_0:0:0:0:0:0:0:1_58395 request stream onCompleted, switch server
+2025-06-17T14:02:31.818+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-17T14:02:31.818+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-1e8bdc9c-c59e-49c8-8ff0-06c74ecd6102)
+2025-06-17T14:02:31.818+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:02:31.819+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:02:31.819+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:02:31.819+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-1e8bdc9c-c59e-49c8-8ff0-06c74ecd6102 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:02:31.819+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:02:31.819+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:02:31.819+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:02:31.824+0800	INFO	rpc/rpc_client.go:426	9efc7393-4867-4610-8cf7-85b8cebab810 try to re connect to a new server, server is not appointed, will choose a random server.
+2025-06-17T14:02:31.824+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:02:31.824+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:02:31.824+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:02:31.925+0800	INFO	rpc/rpc_client.go:337	config-0-1e8bdc9c-c59e-49c8-8ff0-06c74ecd6102 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750140151823_0:0:0:0:0:0:0:1_58471
+2025-06-17T14:02:31.926+0800	INFO	rpc/rpc_client.go:486	config-0-1e8bdc9c-c59e-49c8-8ff0-06c74ecd6102 notify connected event to listeners , connectionId=1750140151823_0:0:0:0:0:0:0:1_58471
+2025-06-17T14:02:31.926+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-17T14:02:31.930+0800	INFO	rpc/rpc_client.go:439	9efc7393-4867-4610-8cf7-85b8cebab810 success to connect a server {serverIp:localhost serverPort:8848 serverGrpcPort:9848}, connectionId=1750140151827_0:0:0:0:0:0:0:1_58472
+2025-06-17T14:02:31.930+0800	INFO	rpc/rpc_client.go:443	9efc7393-4867-4610-8cf7-85b8cebab810 abandon prev connection, server is {serverIp:localhost serverPort:8848 serverGrpcPort:9848}, connectionId is 1750140123106_0:0:0:0:0:0:0:1_58395
+2025-06-17T14:02:31.930+0800	INFO	rpc/rpc_client.go:486	9efc7393-4867-4610-8cf7-85b8cebab810 notify disconnected event to listeners , connectionId=1750140151827_0:0:0:0:0:0:0:1_58472
+2025-06-17T14:02:31.930+0800	INFO	rpc/rpc_client.go:486	9efc7393-4867-4610-8cf7-85b8cebab810 notify connected event to listeners , connectionId=1750140151827_0:0:0:0:0:0:0:1_58472
+2025-06-17T14:02:31.937+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-17T14:02:31.938+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:02:31.938+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:17:14.331+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55639
+2025-06-17T14:17:14.333+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=04dfcbc0-4b65-4cd9-8b95-5b9dcc1da792)
+2025-06-17T14:17:14.333+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:17:14.333+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:17:14.333+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:17:14.333+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 04dfcbc0-4b65-4cd9-8b95-5b9dcc1da792 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:17:14.333+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:17:14.333+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:17:14.333+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:17:14.335+0800	INFO	util/common.go:96	Local IP:10.5.162.111
+2025-06-17T14:17:14.460+0800	INFO	rpc/rpc_client.go:337	04dfcbc0-4b65-4cd9-8b95-5b9dcc1da792 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750141034350_0:0:0:0:0:0:0:1_60757
+2025-06-17T14:17:14.461+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-17T14:17:14.461+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-3462e805-96aa-42df-9466-70b89bb33f28)
+2025-06-17T14:17:14.461+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:17:14.461+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:17:14.461+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:17:14.461+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-3462e805-96aa-42df-9466-70b89bb33f28 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:17:14.461+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:17:14.461+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:17:14.462+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:17:14.572+0800	INFO	rpc/rpc_client.go:337	config-0-3462e805-96aa-42df-9466-70b89bb33f28 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750141034467_0:0:0:0:0:0:0:1_60758
+2025-06-17T14:17:14.572+0800	INFO	rpc/rpc_client.go:486	config-0-3462e805-96aa-42df-9466-70b89bb33f28 notify connected event to listeners , connectionId=1750141034467_0:0:0:0:0:0:0:1_60758
+2025-06-17T14:17:14.572+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-17T14:17:14.586+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-17T14:17:14.588+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:17:14.588+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:18:36.744+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55464
+2025-06-17T14:18:36.745+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=ee55060a-53bf-47f3-98e5-68ea9cfa5204)
+2025-06-17T14:18:36.745+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:18:36.745+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:18:36.745+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:18:36.745+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] ee55060a-53bf-47f3-98e5-68ea9cfa5204 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:18:36.745+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:18:36.745+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:18:36.745+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:18:36.746+0800	INFO	util/common.go:96	Local IP:10.5.162.111
+2025-06-17T14:18:36.850+0800	INFO	rpc/rpc_client.go:337	ee55060a-53bf-47f3-98e5-68ea9cfa5204 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750141116747_0:0:0:0:0:0:0:1_60978
+2025-06-17T14:18:36.959+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-17T14:18:36.959+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-d82522c2-111a-4e77-b77d-2576e844ca19)
+2025-06-17T14:18:36.959+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:18:36.959+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:18:36.959+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:18:36.959+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-d82522c2-111a-4e77-b77d-2576e844ca19 try to connect to server on start up, server: {serverIp:localhost serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:18:36.959+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:18:36.959+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:18:36.959+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:18:37.064+0800	INFO	rpc/rpc_client.go:337	config-0-d82522c2-111a-4e77-b77d-2576e844ca19 success to connect to server {serverIp:localhost serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750141116961_0:0:0:0:0:0:0:1_60979
+2025-06-17T14:18:37.064+0800	INFO	rpc/rpc_client.go:486	config-0-d82522c2-111a-4e77-b77d-2576e844ca19 notify connected event to listeners , connectionId=1750141116961_0:0:0:0:0:0:0:1_60979
+2025-06-17T14:18:37.065+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-17T14:18:37.082+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-17T14:18:39.974+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:18:39.974+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:19:37.691+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55482
+2025-06-17T14:19:37.691+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=6d0c82a8-9ace-4d2f-89de-31712b9aafff)
+2025-06-17T14:19:37.691+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:19:37.691+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:19:37.691+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:19:37.691+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 6d0c82a8-9ace-4d2f-89de-31712b9aafff try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:19:37.691+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:19:37.691+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:19:37.691+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:19:37.692+0800	INFO	util/common.go:96	Local IP:10.5.162.111
+2025-06-17T14:19:37.796+0800	INFO	rpc/rpc_client.go:337	6d0c82a8-9ace-4d2f-89de-31712b9aafff success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750141177693_127.0.0.1_61143
+2025-06-17T14:19:37.903+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-17T14:19:37.903+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-58ae432e-f4c2-4fb3-ab07-9826f067d767)
+2025-06-17T14:19:37.903+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-17T14:19:37.903+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-17T14:19:37.903+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-17T14:19:37.903+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-58ae432e-f4c2-4fb3-ab07-9826f067d767 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-17T14:19:37.903+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-17T14:19:37.903+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-17T14:19:37.903+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-17T14:19:38.007+0800	INFO	rpc/rpc_client.go:337	config-0-58ae432e-f4c2-4fb3-ab07-9826f067d767 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750141177904_127.0.0.1_61147
+2025-06-17T14:19:38.007+0800	INFO	rpc/rpc_client.go:486	config-0-58ae432e-f4c2-4fb3-ab07-9826f067d767 notify connected event to listeners , connectionId=1750141177904_127.0.0.1_61147
+2025-06-17T14:19:38.008+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-17T14:19:38.015+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-17T14:19:38.016+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-17T14:19:38.016+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:41:43.618+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55489
+2025-06-18T10:41:43.618+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=f2bc72a3-600f-4a3b-bbcd-98f6bd21d0fc)
+2025-06-18T10:41:43.619+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:41:43.619+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:41:43.619+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:41:43.619+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] f2bc72a3-600f-4a3b-bbcd-98f6bd21d0fc try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:41:43.619+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:41:43.619+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:41:43.619+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:41:43.619+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T10:41:43.775+0800	INFO	rpc/rpc_client.go:337	f2bc72a3-600f-4a3b-bbcd-98f6bd21d0fc success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214503624_127.0.0.1_51279
+2025-06-18T10:41:43.775+0800	INFO	rpc/rpc_client.go:486	f2bc72a3-600f-4a3b-bbcd-98f6bd21d0fc notify connected event to listeners , connectionId=1750214503624_127.0.0.1_51279
+2025-06-18T10:41:43.868+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T10:41:43.868+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-7092f915-0f77-4266-9522-70489fbef146)
+2025-06-18T10:41:43.868+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:41:43.868+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:41:43.868+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:41:43.868+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-7092f915-0f77-4266-9522-70489fbef146 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:41:43.868+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:41:43.868+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:41:43.868+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:41:43.976+0800	INFO	rpc/rpc_client.go:337	config-0-7092f915-0f77-4266-9522-70489fbef146 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214503871_127.0.0.1_51280
+2025-06-18T10:41:43.976+0800	INFO	rpc/rpc_client.go:486	config-0-7092f915-0f77-4266-9522-70489fbef146 notify connected event to listeners , connectionId=1750214503871_127.0.0.1_51280
+2025-06-18T10:41:43.976+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T10:41:43.996+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-18T10:41:43.997+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:41:43.997+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:41:47.823+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55839
+2025-06-18T10:41:47.823+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=35817c22-9501-4398-ad23-d84347d79afc)
+2025-06-18T10:41:47.823+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:41:47.823+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:41:47.823+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:41:47.823+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 35817c22-9501-4398-ad23-d84347d79afc try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:41:47.823+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:41:47.823+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:41:47.823+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:41:47.824+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T10:41:47.929+0800	INFO	rpc/rpc_client.go:337	35817c22-9501-4398-ad23-d84347d79afc success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214507826_127.0.0.1_51297
+2025-06-18T10:41:48.035+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T10:41:48.035+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-16d4d13b-4d99-487e-9981-d8d8126d97ca)
+2025-06-18T10:41:48.035+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:41:48.035+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:41:48.035+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:41:48.035+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-16d4d13b-4d99-487e-9981-d8d8126d97ca try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:41:48.035+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:41:48.035+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:41:48.035+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:41:48.143+0800	INFO	rpc/rpc_client.go:337	config-0-16d4d13b-4d99-487e-9981-d8d8126d97ca success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214508037_127.0.0.1_51298
+2025-06-18T10:41:48.144+0800	INFO	rpc/rpc_client.go:486	config-0-16d4d13b-4d99-487e-9981-d8d8126d97ca notify connected event to listeners , connectionId=1750214508037_127.0.0.1_51298
+2025-06-18T10:41:48.144+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T10:41:48.153+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-18T10:41:48.154+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:41:48.154+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:41:51.413+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55310
+2025-06-18T10:41:51.414+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=af52484e-fdac-4cdb-a41b-f8bb55a90fd5)
+2025-06-18T10:41:51.414+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:41:51.414+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:41:51.414+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:41:51.414+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] af52484e-fdac-4cdb-a41b-f8bb55a90fd5 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:41:51.414+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:41:51.414+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:41:51.414+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:41:51.415+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T10:41:51.520+0800	INFO	rpc/rpc_client.go:337	af52484e-fdac-4cdb-a41b-f8bb55a90fd5 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214511417_127.0.0.1_51312
+2025-06-18T10:41:51.619+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T10:41:51.619+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-7419447e-486d-43d3-a994-6dfbffefbfe5)
+2025-06-18T10:41:51.619+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:41:51.619+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:41:51.619+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:41:51.620+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-7419447e-486d-43d3-a994-6dfbffefbfe5 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:41:51.620+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:41:51.620+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:41:51.620+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:41:51.725+0800	INFO	rpc/rpc_client.go:337	config-0-7419447e-486d-43d3-a994-6dfbffefbfe5 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214511621_127.0.0.1_51313
+2025-06-18T10:41:51.725+0800	INFO	rpc/rpc_client.go:486	config-0-7419447e-486d-43d3-a994-6dfbffefbfe5 notify connected event to listeners , connectionId=1750214511621_127.0.0.1_51313
+2025-06-18T10:41:51.725+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T10:41:51.728+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-18T10:41:51.729+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:41:51.729+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:47:02.946+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55576
+2025-06-18T10:47:02.948+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=c29f413f-2066-4fd1-84db-f50f5618aa65)
+2025-06-18T10:47:02.948+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:47:02.948+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:47:02.948+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:47:02.948+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] c29f413f-2066-4fd1-84db-f50f5618aa65 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:47:02.948+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:47:02.948+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:47:02.948+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:47:02.949+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T10:47:03.055+0800	INFO	rpc/rpc_client.go:337	c29f413f-2066-4fd1-84db-f50f5618aa65 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214822951_127.0.0.1_52167
+2025-06-18T10:47:03.164+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T10:47:03.164+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-00f416bc-8e81-43bd-9ded-f53593496bb4)
+2025-06-18T10:47:03.164+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:47:03.165+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:47:03.165+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:47:03.165+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-00f416bc-8e81-43bd-9ded-f53593496bb4 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:47:03.165+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:47:03.165+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:47:03.165+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:47:03.268+0800	INFO	rpc/rpc_client.go:337	config-0-00f416bc-8e81-43bd-9ded-f53593496bb4 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214823166_127.0.0.1_52171
+2025-06-18T10:47:03.269+0800	INFO	rpc/rpc_client.go:486	config-0-00f416bc-8e81-43bd-9ded-f53593496bb4 notify connected event to listeners , connectionId=1750214823166_127.0.0.1_52171
+2025-06-18T10:47:03.269+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T10:47:15.017+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-18T10:47:15.018+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:47:15.019+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:47:29.339+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55680
+2025-06-18T10:47:29.339+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=fd462b03-6be8-4ba2-9f83-ad2270dd7ce3)
+2025-06-18T10:47:29.339+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:47:29.339+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:47:29.339+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:47:29.339+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] fd462b03-6be8-4ba2-9f83-ad2270dd7ce3 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:47:29.339+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:47:29.339+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:47:29.339+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:47:29.341+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T10:47:29.447+0800	INFO	rpc/rpc_client.go:337	fd462b03-6be8-4ba2-9f83-ad2270dd7ce3 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214849342_127.0.0.1_52248
+2025-06-18T10:47:29.547+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T10:47:29.547+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-05898657-d2ae-4d50-90a9-05cdc87399b0)
+2025-06-18T10:47:29.547+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:47:29.547+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:47:29.547+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:47:29.547+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-05898657-d2ae-4d50-90a9-05cdc87399b0 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:47:29.547+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:47:29.547+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:47:29.547+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:47:29.653+0800	INFO	rpc/rpc_client.go:337	config-0-05898657-d2ae-4d50-90a9-05cdc87399b0 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214849549_127.0.0.1_52249
+2025-06-18T10:47:29.654+0800	INFO	rpc/rpc_client.go:486	config-0-05898657-d2ae-4d50-90a9-05cdc87399b0 notify connected event to listeners , connectionId=1750214849549_127.0.0.1_52249
+2025-06-18T10:47:29.654+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T10:47:37.867+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-18T10:47:37.867+0800	WARN	config_client/config_client.go:335	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:47:37.867+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T10:48:55.835+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55201
+2025-06-18T10:48:55.837+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=d13a8cb6-4f8e-48b7-87f9-db8a06114793)
+2025-06-18T10:48:55.837+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:48:55.837+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:48:55.837+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:48:55.837+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] d13a8cb6-4f8e-48b7-87f9-db8a06114793 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:48:55.837+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:48:55.837+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:48:55.837+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:48:55.838+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T10:48:55.943+0800	INFO	rpc/rpc_client.go:337	d13a8cb6-4f8e-48b7-87f9-db8a06114793 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214935839_127.0.0.1_52475
+2025-06-18T10:48:55.943+0800	INFO	rpc/rpc_client.go:486	d13a8cb6-4f8e-48b7-87f9-db8a06114793 notify connected event to listeners , connectionId=1750214935839_127.0.0.1_52475
+2025-06-18T10:48:56.035+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T10:48:56.035+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-df3dda73-2415-4065-8cac-c0bd2fec8562)
+2025-06-18T10:48:56.035+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:48:56.035+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:48:56.035+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:48:56.035+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-df3dda73-2415-4065-8cac-c0bd2fec8562 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:48:56.035+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:48:56.035+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:48:56.035+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:48:56.140+0800	INFO	rpc/rpc_client.go:337	config-0-df3dda73-2415-4065-8cac-c0bd2fec8562 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750214936037_127.0.0.1_52476
+2025-06-18T10:48:56.141+0800	INFO	rpc/rpc_client.go:486	config-0-df3dda73-2415-4065-8cac-c0bd2fec8562 notify connected event to listeners , connectionId=1750214936037_127.0.0.1_52476
+2025-06-18T10:48:56.141+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T10:49:25.208+0800	INFO	rpc/grpc_client.go:271	connectionId 1750214936037_127.0.0.1_52476 request stream onCompleted, switch server
+2025-06-18T10:49:25.617+0800	INFO	rpc/grpc_client.go:271	connectionId 1750214935839_127.0.0.1_52475 request stream onCompleted, switch server
+2025-06-18T10:49:27.302+0800	ERROR	rpc/rpc_client.go:629	Send request fail, request=ConfigQueryRequest, body={"requestId":"","group":"auto-discovery","dataId":"config.toml","tenant":"cmdb","module":"config","tag":""}, retryTimes=0, error=Connection is unregistered.
+github.com/nacos-group/nacos-sdk-go/v2/common/remote/rpc.(*RpcClient).Request
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/remote/rpc/rpc_client.go:609
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigProxy).requestProxy
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/config_client/config_proxy.go:63
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigProxy).queryConfig
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/config_client/config_proxy.go:128
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigClient).getConfigInner
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/config_client/config_client.go:198
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigClient).GetConfig
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/config_client/config_client.go:166
+main.InitConfig
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:66
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:27
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700
+2025-06-18T10:49:27.302+0800	INFO	rpc/rpc_client.go:426	config-0-df3dda73-2415-4065-8cac-c0bd2fec8562 try to re connect to a new server, server is not appointed, will choose a random server.
+2025-06-18T10:49:27.302+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:49:27.302+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:49:27.302+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:49:27.304+0800	INFO	rpc/rpc_client.go:426	d13a8cb6-4f8e-48b7-87f9-db8a06114793 try to re connect to a new server, server is not appointed, will choose a random server.
+2025-06-18T10:49:27.304+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:49:27.304+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:49:27.304+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:49:27.402+0800	ERROR	config_client/config_client.go:201	get config from server error:Connection is unregistered., dataId=config.toml, group=auto-discovery, namespaceId=cmdb
+2025-06-18T10:53:22.007+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55286
+2025-06-18T10:53:22.010+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=c9be1205-4d16-40f3-a851-45fe85621d6d)
+2025-06-18T10:53:22.010+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:53:22.010+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:53:22.010+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:53:22.010+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] c9be1205-4d16-40f3-a851-45fe85621d6d try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:53:22.010+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:53:22.010+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:53:22.010+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:53:22.012+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T10:53:22.117+0800	INFO	rpc/rpc_client.go:337	c9be1205-4d16-40f3-a851-45fe85621d6d success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215202013_127.0.0.1_53212
+2025-06-18T10:53:22.215+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T10:53:22.215+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-8fe9058f-f5d9-4a53-9d2f-a43287694c77)
+2025-06-18T10:53:22.215+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T10:53:22.215+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T10:53:22.215+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T10:53:22.215+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-8fe9058f-f5d9-4a53-9d2f-a43287694c77 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T10:53:22.215+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T10:53:22.215+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T10:53:22.215+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T10:53:22.320+0800	INFO	rpc/rpc_client.go:337	config-0-8fe9058f-f5d9-4a53-9d2f-a43287694c77 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215202217_127.0.0.1_53213
+2025-06-18T10:53:22.320+0800	INFO	rpc/rpc_client.go:486	config-0-8fe9058f-f5d9-4a53-9d2f-a43287694c77 notify connected event to listeners , connectionId=1750215202217_127.0.0.1_53213
+2025-06-18T10:53:22.320+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T10:53:22.330+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:03:06.111+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55905
+2025-06-18T11:03:06.112+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=6e0a08b4-cb39-40db-9941-9ea16d8b1b9b)
+2025-06-18T11:03:06.113+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:03:06.113+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:03:06.113+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:03:06.113+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 6e0a08b4-cb39-40db-9941-9ea16d8b1b9b try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:03:06.113+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:03:06.113+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:03:06.113+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:03:06.114+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T11:03:06.223+0800	INFO	rpc/rpc_client.go:337	6e0a08b4-cb39-40db-9941-9ea16d8b1b9b success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215786117_127.0.0.1_54926
+2025-06-18T11:03:06.339+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T11:03:06.339+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-be2168fa-a6cb-4994-8d69-513d0652366a)
+2025-06-18T11:03:06.339+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:03:06.339+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:03:06.339+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:03:06.339+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-be2168fa-a6cb-4994-8d69-513d0652366a try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:03:06.339+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:03:06.339+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:03:06.339+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:03:06.444+0800	INFO	rpc/rpc_client.go:337	config-0-be2168fa-a6cb-4994-8d69-513d0652366a success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215786341_127.0.0.1_54927
+2025-06-18T11:03:06.444+0800	INFO	rpc/rpc_client.go:486	config-0-be2168fa-a6cb-4994-8d69-513d0652366a notify connected event to listeners , connectionId=1750215786341_127.0.0.1_54927
+2025-06-18T11:03:06.444+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T11:03:06.452+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:03:06.452+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-18T11:03:06.456+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-18T11:03:06.478+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:03:06.482+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:03:06.486+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:03:09.778+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55320
+2025-06-18T11:03:09.779+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=e44484f5-b1f3-404d-a883-9f8e2c3ae2bf)
+2025-06-18T11:03:09.779+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:03:09.779+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:03:09.779+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:03:09.779+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] e44484f5-b1f3-404d-a883-9f8e2c3ae2bf try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:03:09.779+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:03:09.779+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:03:09.779+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:03:09.780+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T11:03:09.884+0800	INFO	rpc/rpc_client.go:337	e44484f5-b1f3-404d-a883-9f8e2c3ae2bf success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215789782_127.0.0.1_54942
+2025-06-18T11:03:09.978+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T11:03:09.978+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-34166b51-3da9-4acc-995a-9ae44aae3ecf)
+2025-06-18T11:03:09.978+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:03:09.978+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:03:09.978+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:03:09.978+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-34166b51-3da9-4acc-995a-9ae44aae3ecf try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:03:09.978+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:03:09.978+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:03:09.978+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:03:10.082+0800	INFO	rpc/rpc_client.go:337	config-0-34166b51-3da9-4acc-995a-9ae44aae3ecf success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215789980_127.0.0.1_54943
+2025-06-18T11:03:10.083+0800	INFO	rpc/rpc_client.go:486	config-0-34166b51-3da9-4acc-995a-9ae44aae3ecf notify connected event to listeners , connectionId=1750215789980_127.0.0.1_54943
+2025-06-18T11:03:10.083+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T11:03:10.088+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:03:10.088+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-18T11:03:10.093+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-18T11:03:10.096+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:03:10.100+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:03:10.104+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:04:28.972+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55370
+2025-06-18T11:04:28.975+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=0ee68d0f-aec9-4306-b9ef-423b21fdc34a)
+2025-06-18T11:04:28.975+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:04:28.975+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:04:28.975+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:04:28.975+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 0ee68d0f-aec9-4306-b9ef-423b21fdc34a try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:04:28.975+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:04:28.975+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:04:28.975+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:04:28.976+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T11:04:29.080+0800	INFO	rpc/rpc_client.go:337	0ee68d0f-aec9-4306-b9ef-423b21fdc34a success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215868977_127.0.0.1_55203
+2025-06-18T11:04:29.187+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T11:04:29.187+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-19cda799-25a6-4c3a-b6fa-9495ab11f43a)
+2025-06-18T11:04:29.187+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:04:29.187+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:04:29.187+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:04:29.187+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-19cda799-25a6-4c3a-b6fa-9495ab11f43a try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:04:29.188+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:04:29.188+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:04:29.188+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:04:29.292+0800	INFO	rpc/rpc_client.go:337	config-0-19cda799-25a6-4c3a-b6fa-9495ab11f43a success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215869191_127.0.0.1_55204
+2025-06-18T11:04:29.293+0800	INFO	rpc/rpc_client.go:486	config-0-19cda799-25a6-4c3a-b6fa-9495ab11f43a notify connected event to listeners , connectionId=1750215869191_127.0.0.1_55204
+2025-06-18T11:04:29.293+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T11:04:33.031+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:04:33.031+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-18T11:04:43.239+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-18T11:04:43.245+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:04:43.252+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:04:43.256+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:05:11.208+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55319
+2025-06-18T11:05:11.211+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=e7879ea6-a955-4dfd-bf36-29671a5d66d2)
+2025-06-18T11:05:11.212+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:05:11.212+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:05:11.212+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:05:11.212+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] e7879ea6-a955-4dfd-bf36-29671a5d66d2 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:05:11.212+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:05:11.212+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:05:11.212+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:05:11.215+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T11:05:11.322+0800	INFO	rpc/rpc_client.go:337	e7879ea6-a955-4dfd-bf36-29671a5d66d2 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215911217_127.0.0.1_55347
+2025-06-18T11:05:11.322+0800	INFO	rpc/rpc_client.go:486	e7879ea6-a955-4dfd-bf36-29671a5d66d2 notify connected event to listeners , connectionId=1750215911217_127.0.0.1_55347
+2025-06-18T11:05:11.426+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T11:05:11.426+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-3d932c81-2afb-49f6-9843-5d0609c3b85f)
+2025-06-18T11:05:11.426+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:05:11.426+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:05:11.426+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:05:11.427+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-3d932c81-2afb-49f6-9843-5d0609c3b85f try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:05:11.427+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:05:11.427+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:05:11.427+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:05:11.530+0800	INFO	rpc/rpc_client.go:337	config-0-3d932c81-2afb-49f6-9843-5d0609c3b85f success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215911428_127.0.0.1_55349
+2025-06-18T11:05:11.530+0800	INFO	rpc/rpc_client.go:486	config-0-3d932c81-2afb-49f6-9843-5d0609c3b85f notify connected event to listeners , connectionId=1750215911428_127.0.0.1_55349
+2025-06-18T11:05:11.530+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T11:05:11.533+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:05:11.533+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-18T11:05:11.535+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-18T11:05:11.539+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:05:11.543+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:05:11.546+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:05:14.407+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55358
+2025-06-18T11:05:14.407+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=38a6bb50-a011-4f3b-9fe9-0d62e626ec1b)
+2025-06-18T11:05:14.407+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:05:14.407+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:05:14.407+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:05:14.407+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 38a6bb50-a011-4f3b-9fe9-0d62e626ec1b try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:05:14.407+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:05:14.407+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:05:14.407+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:05:14.408+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T11:05:14.516+0800	INFO	rpc/rpc_client.go:337	38a6bb50-a011-4f3b-9fe9-0d62e626ec1b success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215914409_127.0.0.1_55364
+2025-06-18T11:05:14.517+0800	INFO	rpc/rpc_client.go:486	38a6bb50-a011-4f3b-9fe9-0d62e626ec1b notify connected event to listeners , connectionId=1750215914409_127.0.0.1_55364
+2025-06-18T11:05:14.625+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T11:05:14.625+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-429400d4-7f2a-47ff-8e66-c37c973d4278)
+2025-06-18T11:05:14.626+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:05:14.626+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:05:14.626+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:05:14.626+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-429400d4-7f2a-47ff-8e66-c37c973d4278 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:05:14.626+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:05:14.626+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:05:14.626+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:05:14.732+0800	INFO	rpc/rpc_client.go:337	config-0-429400d4-7f2a-47ff-8e66-c37c973d4278 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215914628_127.0.0.1_55365
+2025-06-18T11:05:14.732+0800	INFO	rpc/rpc_client.go:486	config-0-429400d4-7f2a-47ff-8e66-c37c973d4278 notify connected event to listeners , connectionId=1750215914628_127.0.0.1_55365
+2025-06-18T11:05:14.732+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T11:05:14.736+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:05:14.736+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-18T11:05:14.740+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-18T11:05:14.742+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:05:14.745+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:05:14.748+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 400
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: Param 'ip' is required.;>
+2025-06-18T11:05:38.353+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55112
+2025-06-18T11:05:38.354+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=63e3042c-fee1-4dfe-ac0f-199dfbf01c0f)
+2025-06-18T11:05:38.354+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:05:38.354+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:05:38.354+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:05:38.354+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 63e3042c-fee1-4dfe-ac0f-199dfbf01c0f try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:05:38.354+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:05:38.354+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:05:38.354+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:05:38.355+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T11:05:38.459+0800	INFO	rpc/rpc_client.go:337	63e3042c-fee1-4dfe-ac0f-199dfbf01c0f success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215938356_127.0.0.1_55455
+2025-06-18T11:05:38.459+0800	INFO	rpc/rpc_client.go:486	63e3042c-fee1-4dfe-ac0f-199dfbf01c0f notify connected event to listeners , connectionId=1750215938356_127.0.0.1_55455
+2025-06-18T11:05:38.561+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T11:05:38.561+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-99baad32-2420-4581-8846-405192e4a8b5)
+2025-06-18T11:05:38.561+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:05:38.561+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:05:38.561+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:05:38.562+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-99baad32-2420-4581-8846-405192e4a8b5 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:05:38.562+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:05:38.562+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:05:38.562+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:05:38.666+0800	INFO	rpc/rpc_client.go:337	config-0-99baad32-2420-4581-8846-405192e4a8b5 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215938564_127.0.0.1_55459
+2025-06-18T11:05:38.667+0800	INFO	rpc/rpc_client.go:486	config-0-99baad32-2420-4581-8846-405192e4a8b5 notify connected event to listeners , connectionId=1750215938564_127.0.0.1_55459
+2025-06-18T11:05:38.667+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T11:05:38.674+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:05:38.674+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-18T11:05:38.679+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"127.0.0.1","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-18T11:05:38.731+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"127.0.0.1","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-18T11:05:38.738+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"127.0.0.1","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-18T11:05:38.741+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"127.0.0.1","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-18T11:05:41.650+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55035
+2025-06-18T11:05:41.651+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=39b0f5c7-c209-44f3-b34e-0de74d04b2fe)
+2025-06-18T11:05:41.651+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:05:41.651+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:05:41.651+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:05:41.651+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 39b0f5c7-c209-44f3-b34e-0de74d04b2fe try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:05:41.651+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:05:41.651+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:05:41.651+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:05:41.652+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T11:05:41.756+0800	INFO	rpc/rpc_client.go:337	39b0f5c7-c209-44f3-b34e-0de74d04b2fe success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215941654_127.0.0.1_55475
+2025-06-18T11:05:41.874+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T11:05:41.874+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-664179b8-d84c-4d35-81bc-7a2b0b6d9f9e)
+2025-06-18T11:05:41.874+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:05:41.874+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:05:41.874+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:05:41.874+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-664179b8-d84c-4d35-81bc-7a2b0b6d9f9e try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:05:41.874+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:05:41.874+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:05:41.874+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:05:41.980+0800	INFO	rpc/rpc_client.go:337	config-0-664179b8-d84c-4d35-81bc-7a2b0b6d9f9e success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750215941877_127.0.0.1_55477
+2025-06-18T11:05:41.980+0800	INFO	rpc/rpc_client.go:486	config-0-664179b8-d84c-4d35-81bc-7a2b0b6d9f9e notify connected event to listeners , connectionId=1750215941877_127.0.0.1_55477
+2025-06-18T11:05:41.980+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T11:05:41.984+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:05:41.984+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-18T11:05:41.986+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"127.0.0.1","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-18T11:05:41.988+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"127.0.0.1","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-18T11:05:41.992+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"127.0.0.1","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-18T11:05:41.995+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"127.0.0.1","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-18T11:09:45.677+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55684
+2025-06-18T11:09:45.679+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=c2bbdcc9-316a-44d8-bc5e-76343551c311)
+2025-06-18T11:09:45.679+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:09:45.679+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:09:45.679+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:09:45.679+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] c2bbdcc9-316a-44d8-bc5e-76343551c311 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:09:45.679+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:09:45.679+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:09:45.680+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:09:45.681+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T11:09:45.815+0800	INFO	rpc/rpc_client.go:337	c2bbdcc9-316a-44d8-bc5e-76343551c311 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750216185685_127.0.0.1_56310
+2025-06-18T11:09:45.916+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T11:09:45.916+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-39098492-5f2d-4271-98d1-d140018b11e6)
+2025-06-18T11:09:45.916+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:09:45.916+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:09:45.916+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:09:45.916+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-39098492-5f2d-4271-98d1-d140018b11e6 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:09:45.916+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:09:45.916+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:09:45.917+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:09:46.022+0800	INFO	rpc/rpc_client.go:337	config-0-39098492-5f2d-4271-98d1-d140018b11e6 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750216185918_127.0.0.1_56311
+2025-06-18T11:09:46.022+0800	INFO	rpc/rpc_client.go:486	config-0-39098492-5f2d-4271-98d1-d140018b11e6 notify connected event to listeners , connectionId=1750216185918_127.0.0.1_56311
+2025-06-18T11:09:46.022+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T11:09:46.037+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:09:46.037+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-18T11:09:46.041+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"127.0.0.1","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-18T11:09:46.071+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"127.0.0.1","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-18T11:09:46.075+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"127.0.0.1","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-18T11:09:46.080+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"127.0.0.1","metadata":"{}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:29
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:23
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-18T11:22:21.354+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55851
+2025-06-18T11:22:21.355+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=36627e88-aa09-457b-acf7-e825d8d744aa)
+2025-06-18T11:22:21.355+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:22:21.355+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:22:21.355+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:22:21.355+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 36627e88-aa09-457b-acf7-e825d8d744aa try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:22:21.355+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:22:21.356+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:22:21.356+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:22:21.357+0800	INFO	util/common.go:96	Local IP:10.5.170.96
+2025-06-18T11:22:21.499+0800	INFO	rpc/rpc_client.go:337	36627e88-aa09-457b-acf7-e825d8d744aa success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750216941361_127.0.0.1_58505
+2025-06-18T11:22:21.586+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-18T11:22:21.586+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-9bd71d3d-27b0-4d50-a41d-596b312d619c)
+2025-06-18T11:22:21.586+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-18T11:22:21.586+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-18T11:22:21.586+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-18T11:22:21.586+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-9bd71d3d-27b0-4d50-a41d-596b312d619c try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-18T11:22:21.586+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-18T11:22:21.586+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-18T11:22:21.586+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-18T11:22:21.691+0800	INFO	rpc/rpc_client.go:337	config-0-9bd71d3d-27b0-4d50-a41d-596b312d619c success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750216941588_127.0.0.1_58506
+2025-06-18T11:22:21.691+0800	INFO	rpc/rpc_client.go:486	config-0-9bd71d3d-27b0-4d50-a41d-596b312d619c notify connected event to listeners , connectionId=1750216941588_127.0.0.1_58506
+2025-06-18T11:22:21.691+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-18T11:22:21.708+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-18T11:22:21.711+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-18T11:22:21.711+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-18T11:22:21.716+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"127.0.0.1","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>

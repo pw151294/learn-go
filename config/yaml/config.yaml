@@ -1,0 +1,46 @@
+CLSPercentile:
+  funcName: percentile
+  fieldName: cumulative_layout_shift
+  tableName: rum_resource
+  aggRule: GROUP_CONCAT(CAST(cumulative_layout_shift AS STRING))
+
+CLSAvg:
+  funcName: avg
+  fieldName: cumulative_layout_shift
+  tableName: rum_resource
+
+LCPPercentile:
+  funcName: percentile
+  fieldName: largest_contentful_paint
+  tableName: rum_view
+  aggRule: GROUP_CONCAT(CAST(largest_contentful_paint AS STRING))
+
+LCPAvg:
+  funcName: avg
+  fieldName: largest_contentful_paint
+  tableName: rum_view
+
+UV:
+  funcName: count
+  fieldName: view_id
+  tableName: rum_view
+  countFunc: count(view_id)
+
+PV:
+  funcName: count
+  fieldName: userid
+  tableName: rum_view
+  countFunc: count(distinct userid)
+
+ErrorCount:
+  funcName: count
+  fieldName: error_source
+  tableName: rum_error
+  countFunc: count(error_source)
+
+ErrorRate:
+  funcName: eval
+  fieldName: view_id
+  tableName: rum_view
+  countFunc: count(view_id)
+  filterRules: view_error_count > 0

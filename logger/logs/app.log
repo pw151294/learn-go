@@ -1,0 +1,440 @@
+2025-06-15 22:22:59	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "2", "worker": 0}
+2025-06-15 22:22:59	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "0", "worker": 1}
+2025-06-15 22:22:59	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "1", "worker": 2}
+2025-06-15 22:22:59	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:22:59	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:22:59	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:00	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "3", "worker": 0}
+2025-06-15 22:23:00	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "5", "worker": 2}
+2025-06-15 22:23:00	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:00	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "4", "worker": 1}
+2025-06-15 22:23:00	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:00	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:01	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "7", "worker": 2}
+2025-06-15 22:23:01	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "8", "worker": 1}
+2025-06-15 22:23:01	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:01	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:01	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:01	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "6", "worker": 0}
+2025-06-15 22:23:02	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "10", "worker": 1}
+2025-06-15 22:23:02	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:02	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:02	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "9", "worker": 2}
+2025-06-15 22:23:02	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:02	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "11", "worker": 0}
+2025-06-15 22:23:03	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "14", "worker": 0}
+2025-06-15 22:23:03	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:03	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:03	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "13", "worker": 2}
+2025-06-15 22:23:03	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:03	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "12", "worker": 1}
+2025-06-15 22:23:04	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "17", "worker": 1}
+2025-06-15 22:23:04	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:04	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:04	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:04	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "16", "worker": 2}
+2025-06-15 22:23:04	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "15", "worker": 0}
+2025-06-15 22:23:05	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "20", "worker": 0}
+2025-06-15 22:23:05	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:05	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "18", "worker": 1}
+2025-06-15 22:23:05	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:05	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:05	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "19", "worker": 2}
+2025-06-15 22:23:06	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "23", "worker": 2}
+2025-06-15 22:23:06	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "22", "worker": 1}
+2025-06-15 22:23:06	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "21", "worker": 0}
+2025-06-15 22:23:06	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:06	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:06	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:07	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "26", "worker": 0}
+2025-06-15 22:23:07	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "24", "worker": 2}
+2025-06-15 22:23:07	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "25", "worker": 1}
+2025-06-15 22:23:07	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:07	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:07	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:08	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "27", "worker": 0}
+2025-06-15 22:23:08	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:08	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:08	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "29", "worker": 1}
+2025-06-15 22:23:08	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:08	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "28", "worker": 2}
+2025-06-15 22:23:09	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "32", "worker": 2}
+2025-06-15 22:23:09	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "31", "worker": 1}
+2025-06-15 22:23:09	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:09	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:09	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:09	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "30", "worker": 0}
+2025-06-15 22:23:10	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "34", "worker": 1}
+2025-06-15 22:23:10	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:10	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:10	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:10	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "35", "worker": 0}
+2025-06-15 22:23:10	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "33", "worker": 2}
+2025-06-15 22:23:11	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "38", "worker": 2}
+2025-06-15 22:23:11	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:11	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:11	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "37", "worker": 0}
+2025-06-15 22:23:11	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:11	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "36", "worker": 1}
+2025-06-15 22:23:12	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "40", "worker": 0}
+2025-06-15 22:23:12	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "41", "worker": 1}
+2025-06-15 22:23:12	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "39", "worker": 2}
+2025-06-15 22:23:12	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:12	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:12	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:13	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "42", "worker": 0}
+2025-06-15 22:23:13	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "44", "worker": 2}
+2025-06-15 22:23:13	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "43", "worker": 1}
+2025-06-15 22:23:13	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:13	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:13	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:14	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "47", "worker": 1}
+2025-06-15 22:23:14	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "46", "worker": 2}
+2025-06-15 22:23:14	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "45", "worker": 0}
+2025-06-15 22:23:14	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:14	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:14	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:15	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "50", "worker": 0}
+2025-06-15 22:23:15	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "49", "worker": 2}
+2025-06-15 22:23:15	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "48", "worker": 1}
+2025-06-15 22:23:15	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:15	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:15	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:16	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "51", "worker": 0}
+2025-06-15 22:23:16	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "53", "worker": 1}
+2025-06-15 22:23:16	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "52", "worker": 2}
+2025-06-15 22:23:16	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:16	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:16	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:17	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "56", "worker": 2}
+2025-06-15 22:23:17	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "54", "worker": 0}
+2025-06-15 22:23:17	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:17	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "55", "worker": 1}
+2025-06-15 22:23:17	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:17	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:18	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "59", "worker": 1}
+2025-06-15 22:23:18	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:18	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:18	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:18	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "58", "worker": 0}
+2025-06-15 22:23:18	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "57", "worker": 2}
+2025-06-15 22:23:19	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "61", "worker": 0}
+2025-06-15 22:23:19	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "60", "worker": 1}
+2025-06-15 22:23:19	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "62", "worker": 2}
+2025-06-15 22:23:19	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:19	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:19	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:20	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "65", "worker": 2}
+2025-06-15 22:23:20	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "63", "worker": 0}
+2025-06-15 22:23:20	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "64", "worker": 1}
+2025-06-15 22:23:20	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:20	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:20	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:21	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "68", "worker": 1}
+2025-06-15 22:23:21	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "67", "worker": 0}
+2025-06-15 22:23:21	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "66", "worker": 2}
+2025-06-15 22:23:21	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:21	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:21	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:22	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "70", "worker": 0}
+2025-06-15 22:23:22	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "71", "worker": 2}
+2025-06-15 22:23:22	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "69", "worker": 1}
+2025-06-15 22:23:22	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:22	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:22	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:23	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "73", "worker": 2}
+2025-06-15 22:23:23	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "74", "worker": 1}
+2025-06-15 22:23:23	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:23	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:23	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "72", "worker": 0}
+2025-06-15 22:23:23	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:24	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "77", "worker": 0}
+2025-06-15 22:23:24	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:24	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:24	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:24	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "76", "worker": 1}
+2025-06-15 22:23:24	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "75", "worker": 2}
+2025-06-15 22:23:25	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "80", "worker": 2}
+2025-06-15 22:23:25	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "79", "worker": 1}
+2025-06-15 22:23:25	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:25	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "78", "worker": 0}
+2025-06-15 22:23:25	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:25	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:26	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "82", "worker": 1}
+2025-06-15 22:23:26	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "83", "worker": 0}
+2025-06-15 22:23:26	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:26	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:26	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "81", "worker": 2}
+2025-06-15 22:23:26	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:27	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "86", "worker": 2}
+2025-06-15 22:23:27	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:27	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "84", "worker": 1}
+2025-06-15 22:23:27	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "85", "worker": 0}
+2025-06-15 22:23:27	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:27	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:28	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "87", "worker": 2}
+2025-06-15 22:23:28	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "88", "worker": 1}
+2025-06-15 22:23:28	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "89", "worker": 0}
+2025-06-15 22:23:28	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:28	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:28	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:29	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "90", "worker": 2}
+2025-06-15 22:23:29	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:29	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "91", "worker": 1}
+2025-06-15 22:23:29	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "92", "worker": 0}
+2025-06-15 22:23:29	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:29	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:30	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "95", "worker": 0}
+2025-06-15 22:23:30	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "94", "worker": 1}
+2025-06-15 22:23:30	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "93", "worker": 2}
+2025-06-15 22:23:30	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:30	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:30	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:31	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "98", "worker": 2}
+2025-06-15 22:23:31	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "96", "worker": 1}
+2025-06-15 22:23:31	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:31	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:31	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "97", "worker": 0}
+2025-06-15 22:23:31	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:32	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "99", "worker": 2}
+2025-06-15 22:23:32	INFO	dist-schedule/main.go:23	receive result	{"val": {}}
+2025-06-15 22:23:43	INFO	dist-schedule/main.go:49	shutting down gracefully
+2025-06-15 22:23:43	INFO	dist-schedule/scheduler.go:68	waiting for all tasks to finish
+2025-06-15 22:34:58	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "2", "worker": 0}
+2025-06-15 22:34:58	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "1", "worker": 2}
+2025-06-15 22:34:58	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "0", "worker": 1}
+2025-06-15 22:34:58	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 2"}}
+2025-06-15 22:34:58	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 0"}}
+2025-06-15 22:34:58	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 1"}}
+2025-06-15 22:34:59	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "3", "worker": 0}
+2025-06-15 22:34:59	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 3"}}
+2025-06-15 22:34:59	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 5"}}
+2025-06-15 22:34:59	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 4"}}
+2025-06-15 22:34:59	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "5", "worker": 1}
+2025-06-15 22:34:59	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "4", "worker": 2}
+2025-06-15 22:35:00	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "8", "worker": 2}
+2025-06-15 22:35:00	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "6", "worker": 0}
+2025-06-15 22:35:00	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "7", "worker": 1}
+2025-06-15 22:35:00	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 8"}}
+2025-06-15 22:35:00	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 6"}}
+2025-06-15 22:35:00	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 7"}}
+2025-06-15 22:35:01	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "11", "worker": 1}
+2025-06-15 22:35:01	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "9", "worker": 2}
+2025-06-15 22:35:01	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 11"}}
+2025-06-15 22:35:01	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "10", "worker": 0}
+2025-06-15 22:35:01	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 9"}}
+2025-06-15 22:35:01	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 10"}}
+2025-06-15 22:35:02	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "13", "worker": 2}
+2025-06-15 22:35:02	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 13"}}
+2025-06-15 22:35:02	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 14"}}
+2025-06-15 22:35:02	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 12"}}
+2025-06-15 22:35:02	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "12", "worker": 1}
+2025-06-15 22:35:02	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "14", "worker": 0}
+2025-06-15 22:35:03	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "16", "worker": 1}
+2025-06-15 22:35:03	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 16"}}
+2025-06-15 22:35:03	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "17", "worker": 0}
+2025-06-15 22:35:03	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "15", "worker": 2}
+2025-06-15 22:35:03	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 17"}}
+2025-06-15 22:35:03	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 15"}}
+2025-06-15 22:35:04	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "20", "worker": 2}
+2025-06-15 22:35:04	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 20"}}
+2025-06-15 22:35:04	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 19"}}
+2025-06-15 22:35:04	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "18", "worker": 1}
+2025-06-15 22:35:04	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 18"}}
+2025-06-15 22:35:04	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "19", "worker": 0}
+2025-06-15 22:35:05	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "21", "worker": 2}
+2025-06-15 22:35:05	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "22", "worker": 1}
+2025-06-15 22:35:05	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "23", "worker": 0}
+2025-06-15 22:35:05	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 21"}}
+2025-06-15 22:35:05	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 23"}}
+2025-06-15 22:35:05	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 22"}}
+2025-06-15 22:35:06	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "24", "worker": 2}
+2025-06-15 22:35:06	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "26", "worker": 0}
+2025-06-15 22:35:06	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "25", "worker": 1}
+2025-06-15 22:35:06	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 26"}}
+2025-06-15 22:35:06	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 24"}}
+2025-06-15 22:35:06	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 25"}}
+2025-06-15 22:35:07	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "29", "worker": 1}
+2025-06-15 22:35:07	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "27", "worker": 2}
+2025-06-15 22:35:07	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "28", "worker": 0}
+2025-06-15 22:35:07	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 29"}}
+2025-06-15 22:35:07	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 27"}}
+2025-06-15 22:35:07	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 28"}}
+2025-06-15 22:35:08	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "32", "worker": 0}
+2025-06-15 22:35:08	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "31", "worker": 2}
+2025-06-15 22:35:08	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "30", "worker": 1}
+2025-06-15 22:35:08	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 32"}}
+2025-06-15 22:35:08	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 31"}}
+2025-06-15 22:35:08	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 30"}}
+2025-06-15 22:35:09	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "35", "worker": 1}
+2025-06-15 22:35:09	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 35"}}
+2025-06-15 22:35:09	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 33"}}
+2025-06-15 22:35:09	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "34", "worker": 2}
+2025-06-15 22:35:09	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 34"}}
+2025-06-15 22:35:09	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "33", "worker": 0}
+2025-06-15 22:35:10	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "36", "worker": 1}
+2025-06-15 22:35:10	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 36"}}
+2025-06-15 22:35:10	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "37", "worker": 2}
+2025-06-15 22:35:10	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 37"}}
+2025-06-15 22:35:10	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 38"}}
+2025-06-15 22:35:10	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "38", "worker": 0}
+2025-06-15 22:35:11	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "41", "worker": 0}
+2025-06-15 22:35:11	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "39", "worker": 1}
+2025-06-15 22:35:11	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 41"}}
+2025-06-15 22:35:11	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 39"}}
+2025-06-15 22:35:11	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "40", "worker": 2}
+2025-06-15 22:35:11	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 40"}}
+2025-06-15 22:35:12	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "44", "worker": 2}
+2025-06-15 22:35:12	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "43", "worker": 1}
+2025-06-15 22:35:12	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "42", "worker": 0}
+2025-06-15 22:35:12	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 44"}}
+2025-06-15 22:35:12	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 43"}}
+2025-06-15 22:35:12	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 42"}}
+2025-06-15 22:35:13	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "47", "worker": 0}
+2025-06-15 22:35:13	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "45", "worker": 2}
+2025-06-15 22:35:13	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "46", "worker": 1}
+2025-06-15 22:35:13	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 47"}}
+2025-06-15 22:35:13	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 45"}}
+2025-06-15 22:35:13	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 46"}}
+2025-06-15 22:35:14	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "48", "worker": 0}
+2025-06-15 22:35:14	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "50", "worker": 1}
+2025-06-15 22:35:14	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "49", "worker": 2}
+2025-06-15 22:35:14	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 50"}}
+2025-06-15 22:35:14	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 48"}}
+2025-06-15 22:35:14	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 49"}}
+2025-06-15 22:35:15	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "53", "worker": 2}
+2025-06-15 22:35:15	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "52", "worker": 1}
+2025-06-15 22:35:15	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "51", "worker": 0}
+2025-06-15 22:35:15	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 53"}}
+2025-06-15 22:35:15	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 51"}}
+2025-06-15 22:35:15	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 52"}}
+2025-06-15 22:35:16	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "54", "worker": 2}
+2025-06-15 22:35:16	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "56", "worker": 0}
+2025-06-15 22:35:16	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "55", "worker": 1}
+2025-06-15 22:35:16	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 54"}}
+2025-06-15 22:35:16	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 56"}}
+2025-06-15 22:35:16	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 55"}}
+2025-06-15 22:35:17	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "58", "worker": 0}
+2025-06-15 22:35:17	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "59", "worker": 1}
+2025-06-15 22:35:17	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "57", "worker": 2}
+2025-06-15 22:35:17	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 58"}}
+2025-06-15 22:35:17	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 59"}}
+2025-06-15 22:35:17	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 57"}}
+2025-06-15 22:35:18	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "62", "worker": 2}
+2025-06-15 22:35:18	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "60", "worker": 0}
+2025-06-15 22:35:18	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "61", "worker": 1}
+2025-06-15 22:35:18	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 62"}}
+2025-06-15 22:35:18	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 60"}}
+2025-06-15 22:35:18	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 61"}}
+2025-06-15 22:35:19	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "65", "worker": 1}
+2025-06-15 22:35:19	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "63", "worker": 2}
+2025-06-15 22:35:19	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "64", "worker": 0}
+2025-06-15 22:35:19	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 65"}}
+2025-06-15 22:35:19	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 63"}}
+2025-06-15 22:35:19	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 64"}}
+2025-06-15 22:35:20	INFO	dist-schedule/main.go:49	shutting down gracefully
+2025-06-15 22:35:20	INFO	dist-schedule/scheduler.go:68	waiting for all tasks to finish
+2025-06-15 22:35:20	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "68", "worker": 0}
+2025-06-15 22:35:20	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "66", "worker": 1}
+2025-06-15 22:35:20	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "67", "worker": 2}
+2025-06-15 22:35:20	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 68"}}
+2025-06-15 22:35:20	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 66"}}
+2025-06-15 22:35:20	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 67"}}
+2025-06-15 22:35:21	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "70", "worker": 1}
+2025-06-15 22:35:21	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "71", "worker": 2}
+2025-06-15 22:35:21	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "69", "worker": 0}
+2025-06-15 22:35:21	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 70"}}
+2025-06-15 22:35:21	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 71"}}
+2025-06-15 22:35:21	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 69"}}
+2025-06-15 22:35:22	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "74", "worker": 0}
+2025-06-15 22:35:22	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "72", "worker": 1}
+2025-06-15 22:35:22	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "73", "worker": 2}
+2025-06-15 22:35:22	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 74"}}
+2025-06-15 22:35:22	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 72"}}
+2025-06-15 22:35:22	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 73"}}
+2025-06-15 22:35:23	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "77", "worker": 2}
+2025-06-15 22:35:23	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 77"}}
+2025-06-15 22:35:23	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "76", "worker": 1}
+2025-06-15 22:35:23	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "75", "worker": 0}
+2025-06-15 22:35:23	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 76"}}
+2025-06-15 22:35:23	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 75"}}
+2025-06-15 22:35:24	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "80", "worker": 0}
+2025-06-15 22:35:24	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 80"}}
+2025-06-15 22:35:24	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 79"}}
+2025-06-15 22:35:24	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 78"}}
+2025-06-15 22:35:24	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "79", "worker": 1}
+2025-06-15 22:35:24	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "78", "worker": 2}
+2025-06-15 22:35:25	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "81", "worker": 0}
+2025-06-15 22:35:25	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 81"}}
+2025-06-15 22:35:25	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "82", "worker": 1}
+2025-06-15 22:35:25	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 82"}}
+2025-06-15 22:35:25	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "83", "worker": 2}
+2025-06-15 22:35:25	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 83"}}
+2025-06-15 22:35:26	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "86", "worker": 2}
+2025-06-15 22:35:26	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 86"}}
+2025-06-15 22:35:26	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 85"}}
+2025-06-15 22:35:26	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 84"}}
+2025-06-15 22:35:26	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "85", "worker": 1}
+2025-06-15 22:35:26	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "84", "worker": 0}
+2025-06-15 22:35:27	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "89", "worker": 0}
+2025-06-15 22:35:27	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "88", "worker": 1}
+2025-06-15 22:35:27	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "87", "worker": 2}
+2025-06-15 22:35:27	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 89"}}
+2025-06-15 22:35:27	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 87"}}
+2025-06-15 22:35:27	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 88"}}
+2025-06-15 22:35:28	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "92", "worker": 2}
+2025-06-15 22:35:28	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "91", "worker": 1}
+2025-06-15 22:35:28	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 92"}}
+2025-06-15 22:35:28	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 91"}}
+2025-06-15 22:35:28	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 90"}}
+2025-06-15 22:35:28	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "90", "worker": 0}
+2025-06-15 22:35:29	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "95", "worker": 0}
+2025-06-15 22:35:29	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "93", "worker": 2}
+2025-06-15 22:35:29	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 95"}}
+2025-06-15 22:35:29	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 94"}}
+2025-06-15 22:35:29	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "94", "worker": 1}
+2025-06-15 22:35:29	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 93"}}
+2025-06-15 22:35:30	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "98", "worker": 1}
+2025-06-15 22:35:30	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 98"}}
+2025-06-15 22:35:30	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 97"}}
+2025-06-15 22:35:30	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "96", "worker": 0}
+2025-06-15 22:35:30	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 96"}}
+2025-06-15 22:35:30	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "97", "worker": 2}
+2025-06-15 22:35:31	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "99", "worker": 1}
+2025-06-15 22:35:31	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 99"}}
+2025-06-15 22:44:39	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "2", "worker": 2}
+2025-06-15 22:44:39	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "0", "worker": 1}
+2025-06-15 22:44:39	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "1", "worker": 0}
+2025-06-15 22:44:39	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 2"}}
+2025-06-15 22:44:39	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 1"}}
+2025-06-15 22:44:39	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 0"}}
+2025-06-15 22:44:40	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "3", "worker": 2}
+2025-06-15 22:44:40	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "5", "worker": 0}
+2025-06-15 22:44:40	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "4", "worker": 1}
+2025-06-15 22:44:40	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 5"}}
+2025-06-15 22:44:40	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 3"}}
+2025-06-15 22:44:40	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 4"}}
+2025-06-15 22:44:41	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "8", "worker": 1}
+2025-06-15 22:44:41	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "6", "worker": 2}
+2025-06-15 22:44:41	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "7", "worker": 0}
+2025-06-15 22:44:41	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 8"}}
+2025-06-15 22:44:41	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 6"}}
+2025-06-15 22:44:41	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 7"}}
+2025-06-15 22:44:42	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "11", "worker": 0}
+2025-06-15 22:44:42	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "9", "worker": 1}
+2025-06-15 22:44:42	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "10", "worker": 2}
+2025-06-15 22:44:42	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 11"}}
+2025-06-15 22:44:42	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 9"}}
+2025-06-15 22:44:42	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 10"}}
+2025-06-15 22:44:42	INFO	dist-schedule/main.go:49	shutting down gracefully
+2025-06-15 22:44:43	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "12", "worker": 0}
+2025-06-15 22:44:43	ERROR	dist-schedule/scheduler.go:49	scheduler exit	{"scheduler": 0}
+2025-06-15 22:44:43	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "13", "worker": 1}
+2025-06-15 22:44:43	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 12"}}
+2025-06-15 22:44:43	INFO	dist-schedule/scheduler.go:56	task execute success	{"task id": "14", "worker": 2}
+2025-06-15 22:44:43	ERROR	dist-schedule/scheduler.go:49	scheduler exit	{"scheduler": 2}
+2025-06-15 22:44:43	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 14"}}
+2025-06-15 22:44:43	INFO	dist-schedule/main.go:23	receive result	{"val": {"Result":"auto discovery task result: 13"}}
+2025-06-15 22:44:43	ERROR	dist-schedule/scheduler.go:49	scheduler exit	{"scheduler": 1}
+2025-06-15 22:44:43	INFO	dist-schedule/scheduler.go:73	scheduler stopped
+2025-06-15 22:44:43	ERROR	dist-schedule/main.go:29	task failed	{"err": {}}
