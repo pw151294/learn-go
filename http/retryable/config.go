@@ -30,7 +30,7 @@ type HttpClientConfig struct {
 	ProxyURL              *url.URL      `json:"proxy_url"`               // 代理服务器URL
 }
 
-func newHttpClientConfig(opts ...Options) *HttpClientConfig {
+func NewHttpClientConfig(opts ...Options) *HttpClientConfig {
 	cliCfg := &HttpClientConfig{}
 	if len(opts) > 0 {
 		for _, opt := range opts {

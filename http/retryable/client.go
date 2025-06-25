@@ -20,7 +20,7 @@ func InitRetryableHttpClient(filepath string) {
 		log.Fatalf("read retryable http client config failed: %v", err)
 	}
 
-	cliCfg := newHttpClientConfig(
+	cliCfg := NewHttpClientConfig(
 		WithDialTimeout(config.DialTimeout),
 		WithDialKeepAlive(config.DialKeepAlive),
 		WithMaxIdleConns(config.MaxIdleConns),
@@ -31,10 +31,10 @@ func InitRetryableHttpClient(filepath string) {
 		WithMaxIdleConns(config.MaxIdleConns),
 		WithProxyURL(config.ProxyUrl))
 
-	RetryCli = newRetryableClient(cliCfg, timeout)
+	RetryCli = NewRetryableClient(cliCfg, timeout)
 }
 
-func newRetryableClient(clientConfig *HttpClientConfig, timeout time.Duration) *retryablehttp.Client {
+func NewRetryableClient(clientConfig *HttpClientConfig, timeout time.Duration) *retryablehttp.Client {
 	retryCli := retryablehttp.NewClient()
 
 	retryCli.RetryWaitMin = time.Second
