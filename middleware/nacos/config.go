@@ -1,9 +1,11 @@
-package main
+package nacos
 
 import (
 	"encoding/json"
+	"github.com/nacos-group/nacos-sdk-go/v2/model"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
 	"iflytek.com/weipan4/learn-go/http/host"
+	"iflytek.com/weipan4/learn-go/logger/zap"
 	"os"
 )
 
@@ -94,5 +96,59 @@ func WithGroupName(groupName string) RegisterInstanceParamOptions {
 func WithMetadata(metadata map[string]string) RegisterInstanceParamOptions {
 	return func(param *vo.RegisterInstanceParam) {
 		param.Metadata = metadata
+	}
+}
+
+type SubScribeParamOptions func(param *vo.SubscribeParam)
+
+func newSubscribeParam(opts ...SubScribeParamOptions) *vo.SubscribeParam {
+	param := &vo.SubscribeParam{
+		GroupName:         svcGroup,
+		Clusters:          []string{"DEFAULT"},
+		SubscribeCallback: SubScribeCallback,
+	}
+
+	if len(opts) > 0 {
+		for _, opt := range opts {
+			opt(param)
+		}
+	}
+
+	return param
+}
+
+func SubScribeCallback(services []model.Instance, err error) {
+	zap.GetLogger().Info("subscribed service list info changed")
+	if len(services) > 0 {
+		for _, s := range services {
+			zap.GetLogger().Info("subscribed service info",
+				"service name", s.ServiceName, "ip", s.Ip, "port", s.Port, "instance id", s.InstanceId)
+		}
+	} else {
+		zap.GetLogger().Warn("subscribed service list is empty")
+	}
+}
+
+func WithSubscribeService(serviceName string) SubScribeParamOptions {
+	return func(param *vo.SubscribeParam) {
+		param.ServiceName = serviceName
+	}
+}
+
+func WithSubscribeGroupName(groupName string) SubScribeParamOptions {
+	return func(param *vo.SubscribeParam) {
+		param.GroupName = groupName
+	}
+}
+
+func WithSubscribeClusters(clusters []string) SubScribeParamOptions {
+	return func(param *vo.SubscribeParam) {
+		param.Clusters = clusters
+	}
+}
+
+func WithSubscribeCallback(callback func(services []model.Instance, err error)) SubScribeParamOptions {
+	return func(param *vo.SubscribeParam) {
+		param.SubscribeCallback = callback
 	}
 }

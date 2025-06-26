@@ -1,4 +1,4 @@
-package main
+package nacos
 
 import (
 	"iflytek.com/weipan4/learn-go/http/host"

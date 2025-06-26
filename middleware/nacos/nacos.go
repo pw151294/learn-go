@@ -1,13 +1,11 @@
-package main
+package nacos
 
 import (
-	"fmt"
 	"github.com/nacos-group/nacos-sdk-go/v2/clients"
 	"github.com/nacos-group/nacos-sdk-go/v2/clients/config_client"
 	"github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client"
 	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
-	"github.com/pelletier/go-toml/v2"
 	"iflytek.com/weipan4/learn-go/logger/zap"
 	"log"
 )
@@ -47,12 +45,12 @@ func InitNacos(cfgPath string) {
 	if err := InitNacosConfig(cfgPath); err != nil {
 		log.Fatalf("read nacos config file failed: %v", err)
 	}
-	CreateClient()
-	InitConfig()
-	RegisterService()
+	createClient()
+	//InitConfig(dataId, cfgGroup)
+	//RegisterService()
 }
 
-func CreateClient() {
+func createClient() {
 	// 创建client config
 	clientCfg := *constant.NewClientConfig(
 		constant.WithNamespaceId(NacosCfg.NamespaceId),
@@ -86,22 +84,19 @@ func CreateClient() {
 	}
 }
 
-func InitConfig() {
+func InitConfig(dataId, cfgGroup string) (string, error) {
 	content, err := configClient.GetConfig(vo.ConfigParam{
 		DataId: dataId,
 		Group:  cfgGroup,
 	})
 	if err != nil {
-		log.Fatal(err)
+		zap.GetLogger().Error("read nacos config failed", "dataId", dataId, "group", cfgGroup, "err", err)
+		return "", err
 	}
 	if content == "" {
 		zap.GetLogger().Warn("config content is empty", "dataId", dataId, "group", cfgGroup)
 	} else {
 		zap.GetLogger().Info("read nacos config success", "dataId", dataId, "group", cfgGroup, "content", content)
-		if err = toml.Unmarshal([]byte(content), &Cfg); err != nil {
-			log.Fatalf("load nacos config failed: %v", err)
-		}
-		zap.GetLogger().Info("load nacos config success!")
 	}
 
 	err = configClient.ListenConfig(vo.ConfigParam{
@@ -113,26 +108,36 @@ func InitConfig() {
 		},
 	})
 	if err != nil {
-		log.Fatal(err)
+		zap.GetLogger().Error("listen nacos config failed", "dataId", dataId, "group", cfgGroup, "err", err)
 	}
+	return content, nil
 }
 
-func RegisterService() {
-	instMeta := NewMetadata(
-		WithInstanceId(fmt.Sprintf("%s-id", Cfg.Application.AppName)),
-		WithPort(Cfg.Application.Port))
-
-	regInstParam := newRegisterInstanceParam(
-		WithInstanceIp(Cfg.Application.ServerAddr),
-		WithInstancePort(uint64(Cfg.Application.Port)),
-		WithServiceName(Cfg.Application.AppName),
-		WithMetadata(instMeta),
-	)
+func RegisterService(opts1 []MetadataOptions, opts2 []RegisterInstanceParamOptions) error {
+	instMeta := NewMetadata(opts1...)
+	opts2 = append(opts2, WithMetadata(instMeta))
+	regInstParam := newRegisterInstanceParam(opts2...)
 
 	_, err := namingClient.RegisterInstance(regInstParam)
 	if err != nil {
-		log.Fatalf("register service failed, service name:%s, message:%v", Cfg.Application.AppName, err)
+		zap.GetLogger().Error("register service failed",
+			"service name", regInstParam.ServiceName, "group name", regInstParam.GroupName)
+		return err
 	}
 
-	zap.GetLogger().Info("register service success", "service name", Cfg.Application.AppName)
+	zap.GetLogger().Info("register service success!",
+		"service name", regInstParam.ServiceName, "group name", regInstParam.GroupName)
+	return nil
+}
+
+func SubscribeService(opts []SubScribeParamOptions) error {
+	param := newSubscribeParam(opts...)
+	if err := namingClient.Subscribe(param); err != nil {
+		zap.GetLogger().Error("subscribe service failed",
+			"service name", param.ServiceName, "group name", param.GroupName, "clusters", param.Clusters, "err", err)
+		return err
+	}
+	zap.GetLogger().Info("subscribe service success",
+		"service name", param.ServiceName, "group name", param.GroupName, "clusters", param.Clusters)
+	return nil
 }

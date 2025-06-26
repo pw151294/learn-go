@@ -1172,3 +1172,962 @@ runtime.goexit
 2025-06-18T11:22:21.711+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
 2025-06-18T11:22:21.711+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
 2025-06-18T11:22:21.716+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"127.0.0.1","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T14:27:42.803+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55481
+2025-06-25T14:27:42.804+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=22a32e46-1063-4f87-9d1d-9f4aa833f326)
+2025-06-25T14:27:42.804+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:27:42.804+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:27:42.804+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:27:42.804+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 22a32e46-1063-4f87-9d1d-9f4aa833f326 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:27:42.804+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:27:42.804+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:27:42.804+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:27:42.805+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T14:27:42.910+0800	INFO	rpc/rpc_client.go:337	22a32e46-1063-4f87-9d1d-9f4aa833f326 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750832862807_127.0.0.1_64708
+2025-06-25T14:27:42.911+0800	INFO	rpc/rpc_client.go:486	22a32e46-1063-4f87-9d1d-9f4aa833f326 notify connected event to listeners , connectionId=1750832862807_127.0.0.1_64708
+2025-06-25T14:27:43.015+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@auto-discovery@@cmdb_failover.
+2025-06-25T14:27:43.015+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-1bb6e9af-7c79-43f5-a646-b31a02f98914)
+2025-06-25T14:27:43.015+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:27:43.015+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:27:43.015+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:27:43.016+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-1bb6e9af-7c79-43f5-a646-b31a02f98914 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:27:43.016+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:27:43.016+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:27:43.016+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:27:43.121+0800	INFO	rpc/rpc_client.go:337	config-0-1bb6e9af-7c79-43f5-a646-b31a02f98914 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750832863018_127.0.0.1_64709
+2025-06-25T14:27:43.121+0800	INFO	rpc/rpc_client.go:486	config-0-1bb6e9af-7c79-43f5-a646-b31a02f98914 notify connected event to listeners , connectionId=1750832863018_127.0.0.1_64709
+2025-06-25T14:27:43.121+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T14:27:43.130+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-25T14:27:43.132+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@auto-discovery@@cmdb.: file not exist
+2025-06-25T14:27:43.132+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-25T14:27:43.138+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"10.5.163.162","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go","ip":"10.5.163.162","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T14:27:43.144+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"10.5.163.162","metadata":"{\"activeConns\":\"200\",\"instanceId\":\"learn-go\",\"ip\":\"10.5.163.162\",\"port\":\"8090\",\"status\":\"active\"}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:109
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:28
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:26
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-25T14:27:43.148+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"10.5.163.162","metadata":"{\"activeConns\":\"200\",\"instanceId\":\"learn-go\",\"ip\":\"10.5.163.162\",\"port\":\"8090\",\"status\":\"active\"}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:109
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:28
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:26
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-25T14:27:43.153+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"auto-discovery","healthy":"true","ip":"10.5.163.162","metadata":"{\"activeConns\":\"200\",\"instanceId\":\"learn-go\",\"ip\":\"10.5.163.162\",\"port\":\"8090\",\"status\":\"active\"}","namespaceId":"cmdb","port":"8090","serviceName":"auto-discovery@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:109
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:28
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:26
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-25T14:30:03.334+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55160
+2025-06-25T14:30:03.336+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=eddad495-3197-4eca-a29b-2869f90dcdb6)
+2025-06-25T14:30:03.336+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:30:03.336+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:30:03.336+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:30:03.336+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] eddad495-3197-4eca-a29b-2869f90dcdb6 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:30:03.336+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:30:03.336+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:30:03.336+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:30:03.337+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T14:30:03.446+0800	INFO	rpc/rpc_client.go:337	eddad495-3197-4eca-a29b-2869f90dcdb6 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833003338_127.0.0.1_65097
+2025-06-25T14:30:03.545+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@cmdb@@cmdb_failover.
+2025-06-25T14:30:03.545+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-ceaa1362-736a-4439-99f7-d960e3af47be)
+2025-06-25T14:30:03.545+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:30:03.545+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:30:03.545+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:30:03.545+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-ceaa1362-736a-4439-99f7-d960e3af47be try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:30:03.545+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:30:03.545+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:30:03.545+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:30:03.652+0800	INFO	rpc/rpc_client.go:337	config-0-ceaa1362-736a-4439-99f7-d960e3af47be success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833003548_127.0.0.1_65098
+2025-06-25T14:30:03.652+0800	INFO	rpc/rpc_client.go:486	config-0-ceaa1362-736a-4439-99f7-d960e3af47be notify connected event to listeners , connectionId=1750833003548_127.0.0.1_65098
+2025-06-25T14:30:03.652+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T14:30:03.660+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@cmdb@@cmdb.: file not exist
+2025-06-25T14:30:03.660+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@cmdb@@cmdb_failover.
+2025-06-25T14:30:03.663+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-25T14:33:10.812+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55912
+2025-06-25T14:33:10.814+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=ead5cfd0-6dd4-4634-afea-a391b02cb153)
+2025-06-25T14:33:10.814+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:33:10.814+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:33:10.814+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:33:10.814+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] ead5cfd0-6dd4-4634-afea-a391b02cb153 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:33:10.814+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:33:10.814+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:33:10.814+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:33:10.814+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T14:33:10.919+0800	INFO	rpc/rpc_client.go:337	ead5cfd0-6dd4-4634-afea-a391b02cb153 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833190815_127.0.0.1_49280
+2025-06-25T14:33:11.031+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@cmdb@@cmdb_failover.
+2025-06-25T14:33:11.031+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-24e541f0-a729-4933-a683-0810dd82e120)
+2025-06-25T14:33:11.031+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:33:11.031+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:33:11.031+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:33:11.031+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-24e541f0-a729-4933-a683-0810dd82e120 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:33:11.031+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:33:11.031+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:33:11.031+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:33:11.136+0800	INFO	rpc/rpc_client.go:337	config-0-24e541f0-a729-4933-a683-0810dd82e120 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833191033_127.0.0.1_49282
+2025-06-25T14:33:11.136+0800	INFO	rpc/rpc_client.go:486	config-0-24e541f0-a729-4933-a683-0810dd82e120 notify connected event to listeners , connectionId=1750833191033_127.0.0.1_49282
+2025-06-25T14:33:11.137+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T14:33:11.149+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@cmdb@@cmdb.: file not exist
+2025-06-25T14:33:11.149+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@auto-discovery@@cmdb_failover.
+2025-06-25T14:33:11.156+0800	WARN	rpc/rpc_client.go:613	ConfigQueryRequest request received fail response, error code: 300, result code: 500, message: [config data not exist]
+2025-06-25T14:33:46.784+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55895
+2025-06-25T14:33:46.785+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=507503db-1752-469b-b28b-8a994787b0d1)
+2025-06-25T14:33:46.785+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:33:46.785+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:33:46.785+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:33:46.785+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 507503db-1752-469b-b28b-8a994787b0d1 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:33:46.785+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:33:46.785+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:33:46.785+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:33:46.785+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T14:33:46.890+0800	INFO	rpc/rpc_client.go:337	507503db-1752-469b-b28b-8a994787b0d1 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833226787_127.0.0.1_49387
+2025-06-25T14:33:46.891+0800	INFO	rpc/rpc_client.go:486	507503db-1752-469b-b28b-8a994787b0d1 notify connected event to listeners , connectionId=1750833226787_127.0.0.1_49387
+2025-06-25T14:33:46.995+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@cmdb@@cmdb_failover.
+2025-06-25T14:33:46.995+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-302d429a-21a7-41a8-828a-98d91394f465)
+2025-06-25T14:33:46.995+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:33:46.995+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:33:46.995+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:33:46.995+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-302d429a-21a7-41a8-828a-98d91394f465 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:33:46.995+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:33:46.996+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:33:46.996+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:33:47.099+0800	INFO	rpc/rpc_client.go:337	config-0-302d429a-21a7-41a8-828a-98d91394f465 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833226997_127.0.0.1_49388
+2025-06-25T14:33:47.100+0800	INFO	rpc/rpc_client.go:486	config-0-302d429a-21a7-41a8-828a-98d91394f465 notify connected event to listeners , connectionId=1750833226997_127.0.0.1_49388
+2025-06-25T14:33:47.100+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T14:33:47.107+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@cmdb@@cmdb.: file not exist
+2025-06-25T14:33:47.107+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@cmdb@@cmdb_failover.
+2025-06-25T14:33:47.113+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"10.5.163.162","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go","ip":"10.5.163.162","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T14:33:47.119+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"cmdb","healthy":"true","ip":"10.5.163.162","metadata":"{\"activeConns\":\"200\",\"instanceId\":\"learn-go\",\"ip\":\"10.5.163.162\",\"port\":\"8090\",\"status\":\"active\"}","namespaceId":"cmdb","port":"8090","serviceName":"cmdb@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:109
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:28
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:26
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-25T14:33:47.123+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"cmdb","healthy":"true","ip":"10.5.163.162","metadata":"{\"activeConns\":\"200\",\"instanceId\":\"learn-go\",\"ip\":\"10.5.163.162\",\"port\":\"8090\",\"status\":\"active\"}","namespaceId":"cmdb","port":"8090","serviceName":"cmdb@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:109
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:28
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:26
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-25T14:33:47.127+0800	ERROR	nacos_server/nacos_server.go:240	api</v1/ns/instance>,method:<POST>, params:<{"accessToken":"AUTH_DISABLED","app":"","clusterName":"","enable":"true","ephemeral":"false","groupName":"cmdb","healthy":"true","ip":"10.5.163.162","metadata":"{\"activeConns\":\"200\",\"instanceId\":\"learn-go\",\"ip\":\"10.5.163.162\",\"port\":\"8090\",\"status\":\"active\"}","namespaceId":"cmdb","port":"8090","serviceName":"cmdb@@learn-go","weight":"10"}>, call domain error:<request return error code 500
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).callServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:184
+github.com/nacos-group/nacos-sdk-go/v2/common/nacos_server.(*NacosServer).ReqApi
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/nacos_server/nacos_server.go:236
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_http.(*NamingHttpProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_http/naming_http_proxy.go:79
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+main.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:109
+main.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:28
+main.main
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/main.go:26
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700> , result:<caused: java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: com.alibaba.nacos.consistency.exception.ConsistencyException: The Raft Group [naming_persistent_service_v2] did not find the Leader node;caused: The Raft Group [naming_persistent_service_v2] did not find the Leader node;>
+2025-06-25T14:40:35.391+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 54974
+2025-06-25T14:40:35.396+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=43eb9551-8a5a-4bb5-b8be-adf775748474)
+2025-06-25T14:40:35.396+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:40:35.396+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:40:35.396+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:40:35.397+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 43eb9551-8a5a-4bb5-b8be-adf775748474 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:40:35.397+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:40:35.397+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:40:35.397+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:40:35.401+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T14:40:35.546+0800	INFO	rpc/rpc_client.go:337	43eb9551-8a5a-4bb5-b8be-adf775748474 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833635407_127.0.0.1_50795
+2025-06-25T14:40:35.642+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@cmdb@@cmdb_failover.
+2025-06-25T14:40:35.642+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-c584d709-a07b-4d9f-aaad-00f75d17083c)
+2025-06-25T14:40:35.642+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:40:35.642+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:40:35.642+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:40:35.642+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-c584d709-a07b-4d9f-aaad-00f75d17083c try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:40:35.642+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:40:35.642+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:40:35.642+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:40:35.748+0800	INFO	rpc/rpc_client.go:337	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833635645_127.0.0.1_50796
+2025-06-25T14:40:35.748+0800	INFO	rpc/rpc_client.go:486	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c notify connected event to listeners , connectionId=1750833635645_127.0.0.1_50796
+2025-06-25T14:40:35.748+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T14:40:35.778+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@cmdb@@cmdb.: file not exist
+2025-06-25T14:40:35.778+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@cmdb@@cmdb_failover.
+2025-06-25T14:40:35.782+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"10.5.163.162","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go","ip":"10.5.163.162","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T14:43:51.222+0800	ERROR	rpc/grpc_client.go:273	connectionId 1750833635645_127.0.0.1_50796 request stream error, switch server, error=rpc error: code = Canceled desc = stream terminated by RST_STREAM with error code: CANCEL
+2025-06-25T14:43:51.222+0800	ERROR	rpc/grpc_client.go:273	connectionId 1750833635407_127.0.0.1_50795 request stream error, switch server, error=rpc error: code = Canceled desc = stream terminated by RST_STREAM with error code: CANCEL
+2025-06-25T14:43:51.223+0800	INFO	rpc/rpc_client.go:426	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c try to re connect to a new server, server is not appointed, will choose a random server.
+2025-06-25T14:43:51.223+0800	INFO	rpc/rpc_client.go:426	43eb9551-8a5a-4bb5-b8be-adf775748474 try to re connect to a new server, server is not appointed, will choose a random server.
+2025-06-25T14:43:51.223+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.223+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.223+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.223+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.223+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.223+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.226+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.226+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.226+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.226+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 1 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:51.227+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.227+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.227+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.228+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 1 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:51.328+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.328+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.328+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.328+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.328+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.328+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.329+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 2 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:51.329+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 2 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:51.530+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.531+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.531+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.531+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.531+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.531+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.534+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 3 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:51.534+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 3 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:51.836+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.836+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:51.836+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.836+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:51.836+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.836+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:51.838+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 4 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:51.838+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 4 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:52.239+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:52.239+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:52.239+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:52.239+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:52.239+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:52.239+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:52.241+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 5 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:52.241+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 5 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:52.741+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:52.741+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:52.741+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:52.742+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:52.742+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:52.742+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:52.743+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 6 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:52.743+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 6 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:53.343+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:53.344+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:53.344+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:53.343+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:53.344+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:53.344+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:53.345+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 7 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:53.345+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 7 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:54.046+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:54.046+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:54.046+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:54.046+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:54.047+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:54.046+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:54.050+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 8 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:54.050+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 8 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:54.850+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:54.850+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:54.850+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:54.850+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:54.851+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:54.851+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:54.852+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 9 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:54.852+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 9 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:55.752+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:55.752+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:55.752+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:55.752+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:55.752+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:55.752+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:55.753+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 10 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:55.753+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 10 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:56.754+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:56.754+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:56.754+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:56.754+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:56.754+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:56.755+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:56.756+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 11 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:56.756+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 11 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:57.856+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:57.857+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:57.857+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:57.857+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:57.857+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:57.857+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:57.858+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 12 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:57.858+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 12 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:59.058+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:59.059+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:43:59.059+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:59.059+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:59.059+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:43:59.059+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:43:59.060+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 13 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:43:59.060+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 13 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:00.361+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:00.362+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:00.362+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:00.362+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:00.362+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:00.362+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:00.362+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 14 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:00.362+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 14 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:01.762+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:01.763+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:01.763+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:01.763+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:01.763+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:01.763+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:01.764+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 15 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:01.764+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 15 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:03.265+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:03.265+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:03.265+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:03.265+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:03.265+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:03.265+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:03.266+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 16 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:03.266+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 16 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:04.866+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:04.867+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:04.867+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:04.867+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:04.867+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:04.867+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:04.868+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 17 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:04.868+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 17 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:06.568+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:06.568+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:06.568+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:06.568+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:06.568+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:06.568+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:06.569+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 18 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:06.569+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 18 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:08.369+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:08.369+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:08.370+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:08.369+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:08.370+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:08.370+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:08.372+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 19 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:08.373+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 19 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:10.273+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:10.274+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:10.274+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:10.274+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:10.274+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:10.275+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:10.275+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 20 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:10.275+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 20 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:12.275+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:12.275+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:12.275+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:12.275+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:12.275+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:12.275+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:12.276+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 21 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:12.276+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 21 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:14.377+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:14.377+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:14.377+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:14.377+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:14.377+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:14.377+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:14.378+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 22 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:14.378+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 22 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:16.578+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:16.578+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:16.578+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:16.578+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:16.578+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:16.578+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:16.580+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 23 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:16.580+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 23 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:18.880+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:18.881+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:18.881+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:18.881+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:18.882+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:18.882+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 24 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:18.882+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:18.882+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 24 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:21.282+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:21.282+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:21.282+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:21.282+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:21.282+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:21.282+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:21.283+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 25 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:21.283+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 25 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:23.784+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:23.784+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:23.784+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:23.784+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:23.785+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:23.785+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:23.785+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 26 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:23.785+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 26 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:26.386+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:26.386+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:26.386+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:26.386+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:26.386+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:26.386+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:26.387+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 27 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:26.387+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 27 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:29.087+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:29.088+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:29.088+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:29.088+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:29.088+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:29.088+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:29.089+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 28 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:29.090+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 28 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:31.891+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:31.891+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:31.891+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:31.891+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:31.891+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:31.891+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:31.891+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 29 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:31.891+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 29 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:34.792+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:34.793+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:34.793+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:34.793+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:34.793+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:34.793+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:34.794+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 30 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:34.795+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 30 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:37.796+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:37.796+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:37.796+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:37.796+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:37.796+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:37.796+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:37.797+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 31 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:37.797+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 31 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:40.897+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:40.897+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:40.897+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:40.897+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:40.897+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:40.897+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:40.898+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 32 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:40.898+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 32 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:44.098+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:44.098+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:44.098+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:44.098+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:44.098+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:44.098+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:44.099+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 33 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:44.099+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 33 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:47.438+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:47.438+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:47.438+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:47.438+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:47.438+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:47.438+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:47.439+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 34 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:47.439+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 34 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:50.840+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:50.840+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:50.840+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:50.840+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:50.840+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:50.840+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:50.841+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 35 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:50.841+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 35 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:54.341+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:54.341+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:54.341+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:54.341+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:54.341+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:54.341+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:54.342+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 36 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:54.342+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 36 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:57.943+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:57.943+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:57.943+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:57.943+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:44:57.943+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:44:57.943+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:44:57.944+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 37 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:44:57.944+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 37 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:45:01.645+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:01.645+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:01.645+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:01.645+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:01.645+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:01.645+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:01.646+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 38 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:45:01.646+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 38 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:45:05.447+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:05.447+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:05.447+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:05.447+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:05.447+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:05.447+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:05.448+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 39 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:45:05.448+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 39 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:45:09.348+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:09.348+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:09.348+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:09.348+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:09.348+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:09.348+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:09.350+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 40 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:45:09.350+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 40 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:45:13.351+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:13.351+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:13.351+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:13.351+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:13.351+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:13.351+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:13.351+0800	WARN	rpc/rpc_client.go:457	43eb9551-8a5a-4bb5-b8be-adf775748474 fail to connect server, after trying 41 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:45:13.351+0800	WARN	rpc/rpc_client.go:457	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c fail to connect server, after trying 41 times, last try server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, error=server check request failed , err:rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9848: connect: connection refused"
+2025-06-25T14:45:17.453+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:17.454+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:17.453+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:17.455+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:17.455+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:17.455+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:17.591+0800	INFO	rpc/rpc_client.go:439	43eb9551-8a5a-4bb5-b8be-adf775748474 success to connect a server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, connectionId=1750833917458_127.0.0.1_51695
+2025-06-25T14:45:17.594+0800	INFO	rpc/rpc_client.go:443	43eb9551-8a5a-4bb5-b8be-adf775748474 abandon prev connection, server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, connectionId is 1750833635407_127.0.0.1_50795
+2025-06-25T14:45:17.591+0800	INFO	rpc/rpc_client.go:439	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c success to connect a server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, connectionId=1750833917457_127.0.0.1_51694
+2025-06-25T14:45:17.594+0800	INFO	rpc/rpc_client.go:443	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c abandon prev connection, server is {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}, connectionId is 1750833635645_127.0.0.1_50796
+2025-06-25T14:45:17.594+0800	INFO	rpc/rpc_client.go:486	43eb9551-8a5a-4bb5-b8be-adf775748474 notify disconnected event to listeners , connectionId=1750833917458_127.0.0.1_51695
+2025-06-25T14:45:17.594+0800	INFO	rpc/rpc_client.go:486	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c notify disconnected event to listeners , connectionId=1750833917457_127.0.0.1_51694
+2025-06-25T14:45:17.594+0800	INFO	rpc/rpc_client.go:486	43eb9551-8a5a-4bb5-b8be-adf775748474 notify connected event to listeners , connectionId=1750833917458_127.0.0.1_51695
+2025-06-25T14:45:17.597+0800	INFO	config_client/config_connection_event_listener.go:45	[ConfigConnectionEventListener] disconnect from config server for taskId: 0
+2025-06-25T14:45:17.604+0800	INFO	rpc/rpc_client.go:486	config-0-c584d709-a07b-4d9f-aaad-00f75d17083c notify connected event to listeners , connectionId=1750833917457_127.0.0.1_51694
+2025-06-25T14:45:17.604+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T14:45:42.140+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55774
+2025-06-25T14:45:42.141+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=9bc694d0-09a4-42cd-971c-8ced2cc1fe37)
+2025-06-25T14:45:42.141+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:45:42.141+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:45:42.141+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:45:42.141+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 9bc694d0-09a4-42cd-971c-8ced2cc1fe37 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:45:42.141+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:42.142+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:42.142+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:42.143+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T14:45:42.248+0800	INFO	rpc/rpc_client.go:337	9bc694d0-09a4-42cd-971c-8ced2cc1fe37 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833942144_127.0.0.1_51778
+2025-06-25T14:45:42.344+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@cmdb@@cmdb_failover.
+2025-06-25T14:45:42.345+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-b2ffe1a5-d573-42f0-a717-d3cd0159bfad)
+2025-06-25T14:45:42.345+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T14:45:42.345+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T14:45:42.345+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T14:45:42.345+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-b2ffe1a5-d573-42f0-a717-d3cd0159bfad try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T14:45:42.345+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T14:45:42.345+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T14:45:42.345+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T14:45:42.452+0800	INFO	rpc/rpc_client.go:337	config-0-b2ffe1a5-d573-42f0-a717-d3cd0159bfad success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750833942347_127.0.0.1_51779
+2025-06-25T14:45:42.452+0800	INFO	rpc/rpc_client.go:486	config-0-b2ffe1a5-d573-42f0-a717-d3cd0159bfad notify connected event to listeners , connectionId=1750833942347_127.0.0.1_51779
+2025-06-25T14:45:42.452+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T14:45:42.475+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@cmdb@@cmdb.: file not exist
+2025-06-25T14:45:42.475+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@cmdb@@cmdb_failover.
+2025-06-25T14:45:42.485+0800	INFO	naming_http/naming_http_proxy.go:63	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"10.5.163.162","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go","ip":"10.5.163.162","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T15:11:01.630+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55819
+2025-06-25T15:11:01.632+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=1c510a74-ed4b-4f4c-ba2a-802137e10350)
+2025-06-25T15:11:01.632+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T15:11:01.632+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T15:11:01.632+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T15:11:01.632+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 1c510a74-ed4b-4f4c-ba2a-802137e10350 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T15:11:01.632+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T15:11:01.632+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T15:11:01.632+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T15:11:01.633+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T15:11:01.743+0800	INFO	rpc/rpc_client.go:337	1c510a74-ed4b-4f4c-ba2a-802137e10350 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750835461638_127.0.0.1_57864
+2025-06-25T15:11:01.851+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@cmdb@@cmdb_failover.
+2025-06-25T15:11:01.851+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-c9868249-3c16-423a-be44-16b3fa3a5c62)
+2025-06-25T15:11:01.851+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T15:11:01.851+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T15:11:01.851+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T15:11:01.851+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-c9868249-3c16-423a-be44-16b3fa3a5c62 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T15:11:01.851+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T15:11:01.851+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T15:11:01.851+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T15:11:01.955+0800	INFO	rpc/rpc_client.go:337	config-0-c9868249-3c16-423a-be44-16b3fa3a5c62 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750835461854_127.0.0.1_57865
+2025-06-25T15:11:01.956+0800	INFO	rpc/rpc_client.go:486	config-0-c9868249-3c16-423a-be44-16b3fa3a5c62 notify connected event to listeners , connectionId=1750835461854_127.0.0.1_57865
+2025-06-25T15:11:01.956+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T15:11:01.976+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@cmdb@@cmdb.: file not exist
+2025-06-25T15:11:01.976+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.json@@cmdb@@cmdb_failover.
+2025-06-25T15:11:01.982+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"10.5.163.162","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go-id","ip":"10.5.163.162","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T15:11:02.004+0800	ERROR	rpc/rpc_client.go:629	Send request fail, request=InstanceRequest, body={"requestId":"","namespace":"cmdb","serviceName":"learn-go","groupName":"cmdb","module":"naming","type":"registerInstance","instance":{"instanceId":"","ip":"10.5.163.162","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go-id","ip":"10.5.163.162","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}}, retryTimes=0, error=errCode: 400, errMsg: Current service cmdb@@learn-go is persistent service, can't register ephemeral instance. 
+github.com/nacos-group/nacos-sdk-go/v2/common/remote/rpc.(*RpcClient).Request
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/remote/rpc/rpc_client.go:609
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_grpc.(*NamingGrpcProxy).requestToServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_grpc/naming_grpc_proxy.go:88
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_grpc.(*NamingGrpcProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_grpc/naming_grpc_proxy.go:99
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+iflytek.com/weipan4/learn-go/middleware/nacos.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+iflytek.com/weipan4/learn-go/middleware/nacos.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:30
+iflytek.com/weipan4/learn-go/middleware/nacos.TestDeregisterInstance
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos_test.go:20
+testing.tRunner
+	/usr/local/go/src/testing/testing.go:1690
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700
+2025-06-25T15:11:02.107+0800	ERROR	rpc/rpc_client.go:629	Send request fail, request=InstanceRequest, body={"requestId":"","namespace":"cmdb","serviceName":"learn-go","groupName":"cmdb","module":"naming","type":"registerInstance","instance":{"instanceId":"","ip":"10.5.163.162","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go-id","ip":"10.5.163.162","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}}, retryTimes=1, error=errCode: 400, errMsg: Current service cmdb@@learn-go is persistent service, can't register ephemeral instance. 
+github.com/nacos-group/nacos-sdk-go/v2/common/remote/rpc.(*RpcClient).Request
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/remote/rpc/rpc_client.go:609
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_grpc.(*NamingGrpcProxy).requestToServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_grpc/naming_grpc_proxy.go:88
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_grpc.(*NamingGrpcProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_grpc/naming_grpc_proxy.go:99
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+iflytek.com/weipan4/learn-go/middleware/nacos.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+iflytek.com/weipan4/learn-go/middleware/nacos.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:30
+iflytek.com/weipan4/learn-go/middleware/nacos.TestDeregisterInstance
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos_test.go:20
+testing.tRunner
+	/usr/local/go/src/testing/testing.go:1690
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700
+2025-06-25T15:11:02.216+0800	ERROR	rpc/rpc_client.go:629	Send request fail, request=InstanceRequest, body={"requestId":"","namespace":"cmdb","serviceName":"learn-go","groupName":"cmdb","module":"naming","type":"registerInstance","instance":{"instanceId":"","ip":"10.5.163.162","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go-id","ip":"10.5.163.162","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}}, retryTimes=2, error=errCode: 400, errMsg: Current service cmdb@@learn-go is persistent service, can't register ephemeral instance. 
+github.com/nacos-group/nacos-sdk-go/v2/common/remote/rpc.(*RpcClient).Request
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/common/remote/rpc/rpc_client.go:609
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_grpc.(*NamingGrpcProxy).requestToServer
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_grpc/naming_grpc_proxy.go:88
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client/naming_grpc.(*NamingGrpcProxy).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_grpc/naming_grpc_proxy.go:99
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingProxyDelegate).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_proxy_delegate.go:92
+github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client.(*NamingClient).RegisterInstance
+	/Users/a123/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.2/clients/naming_client/naming_client.go:124
+iflytek.com/weipan4/learn-go/middleware/nacos.RegisterService
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:111
+iflytek.com/weipan4/learn-go/middleware/nacos.InitNacos
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos.go:30
+iflytek.com/weipan4/learn-go/middleware/nacos.TestDeregisterInstance
+	/Users/a123/Downloads/go/learn-go/learn-go/middleware/nacos/nacos_test.go:20
+testing.tRunner
+	/usr/local/go/src/testing/testing.go:1690
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700
+2025-06-25T15:13:35.802+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55754
+2025-06-25T15:13:35.803+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=fcf24b0f-ed89-43ee-88a7-feb56869f6d6)
+2025-06-25T15:13:35.803+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T15:13:35.803+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T15:13:35.803+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T15:13:35.803+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] fcf24b0f-ed89-43ee-88a7-feb56869f6d6 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T15:13:35.803+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T15:13:35.803+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T15:13:35.803+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T15:13:35.804+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T15:13:35.908+0800	INFO	rpc/rpc_client.go:337	fcf24b0f-ed89-43ee-88a7-feb56869f6d6 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750835615805_127.0.0.1_58380
+2025-06-25T15:13:36.014+0800	INFO	naming_http/naming_http_proxy.go:106	deregister instance namespaceId:<cmdb>,serviceName:<DEFAULT_GROUP@@auto-discovery> with instance:<10.5.163.162:8090@DEFAULT>
+2025-06-25T15:13:36.014+0800	INFO	naming_http/beat_reactor.go:89	remove beat: DEFAULT_GROUP@@auto-discovery@10.5.163.162:8090 from beat map
+2025-06-25T15:14:41.471+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55529
+2025-06-25T15:14:41.471+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=ca931e0a-fd6d-4d30-b546-62747eca2f52)
+2025-06-25T15:14:41.471+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T15:14:41.471+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T15:14:41.471+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T15:14:41.471+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] ca931e0a-fd6d-4d30-b546-62747eca2f52 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T15:14:41.471+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T15:14:41.471+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T15:14:41.471+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T15:14:41.472+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T15:14:41.577+0800	INFO	rpc/rpc_client.go:337	ca931e0a-fd6d-4d30-b546-62747eca2f52 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750835681475_127.0.0.1_58593
+2025-06-25T15:14:41.685+0800	INFO	naming_http/naming_http_proxy.go:106	deregister instance namespaceId:<cmdb>,serviceName:<DEFAULT_GROUP@@learn-go> with instance:<10.5.163.162:8090@DEFAULT>
+2025-06-25T15:14:41.685+0800	INFO	naming_http/beat_reactor.go:89	remove beat: DEFAULT_GROUP@@learn-go@10.5.163.162:8090 from beat map
+2025-06-25T15:15:17.858+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55354
+2025-06-25T15:15:17.858+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=f28833ae-8e90-4190-928a-ea8493f6d879)
+2025-06-25T15:15:17.858+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T15:15:17.858+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T15:15:17.858+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T15:15:17.858+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] f28833ae-8e90-4190-928a-ea8493f6d879 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T15:15:17.858+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T15:15:17.858+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T15:15:17.858+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T15:15:17.859+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T15:15:17.962+0800	INFO	rpc/rpc_client.go:337	f28833ae-8e90-4190-928a-ea8493f6d879 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750835717860_127.0.0.1_58709
+2025-06-25T15:15:18.051+0800	INFO	naming_http/naming_http_proxy.go:106	deregister instance namespaceId:<cmdb>,serviceName:<DEFAULT_GROUP@@learn-go> with instance:<10.5.163.162:8090@DEFAULT>
+2025-06-25T15:15:18.052+0800	INFO	naming_http/beat_reactor.go:89	remove beat: DEFAULT_GROUP@@learn-go@10.5.163.162:8090 from beat map
+2025-06-25T16:45:03.785+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55752
+2025-06-25T16:45:03.785+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=505c8acc-873c-4874-8c86-742e101a8b8a)
+2025-06-25T16:45:03.785+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T16:45:03.786+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T16:45:03.786+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T16:45:03.786+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 505c8acc-873c-4874-8c86-742e101a8b8a try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T16:45:03.786+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T16:45:03.786+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T16:45:03.786+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T16:45:03.787+0800	INFO	util/common.go:96	Local IP:10.5.163.162
+2025-06-25T16:45:04.146+0800	INFO	rpc/rpc_client.go:337	505c8acc-873c-4874-8c86-742e101a8b8a success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750841103861_127.0.0.1_57191
+2025-06-25T16:45:04.291+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@cmdb@@cmdb_failover.
+2025-06-25T16:45:04.291+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-25687aec-ec85-4c11-855c-ea5433696e01)
+2025-06-25T16:45:04.291+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T16:45:04.291+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T16:45:04.291+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T16:45:04.291+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-25687aec-ec85-4c11-855c-ea5433696e01 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T16:45:04.291+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T16:45:04.291+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T16:45:04.291+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T16:45:04.403+0800	INFO	rpc/rpc_client.go:337	config-0-25687aec-ec85-4c11-855c-ea5433696e01 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750841104296_127.0.0.1_57192
+2025-06-25T16:45:04.403+0800	INFO	rpc/rpc_client.go:486	config-0-25687aec-ec85-4c11-855c-ea5433696e01 notify connected event to listeners , connectionId=1750841104296_127.0.0.1_57192
+2025-06-25T16:45:04.403+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T16:45:04.506+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@cmdb@@cmdb.: file not exist
+2025-06-25T16:45:04.506+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"127.0.0.1","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go-id","ip":"10.5.163.162","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T21:42:41.072+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55085
+2025-06-25T21:42:41.073+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=edc5827e-0fb7-4355-ae71-fd6b46e526db)
+2025-06-25T21:42:41.073+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T21:42:41.073+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T21:42:41.073+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T21:42:41.073+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] edc5827e-0fb7-4355-ae71-fd6b46e526db try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T21:42:41.073+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T21:42:41.073+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T21:42:41.073+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T21:42:41.074+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T21:42:41.191+0800	INFO	rpc/rpc_client.go:337	edc5827e-0fb7-4355-ae71-fd6b46e526db success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750858961084_127.0.0.1_49175
+2025-06-25T21:42:41.289+0800	WARN	cache/disk_cache.go:193	read Config Content failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/config.toml@@cmdb@@cmdb_failover.
+2025-06-25T21:42:41.289+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=config-0-128ca0ec-03de-42d6-8c49-ad47167c640a)
+2025-06-25T21:42:41.289+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T21:42:41.289+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T21:42:41.289+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T21:42:41.289+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] config-0-128ca0ec-03de-42d6-8c49-ad47167c640a try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T21:42:41.290+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T21:42:41.290+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T21:42:41.290+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T21:42:41.395+0800	INFO	rpc/rpc_client.go:337	config-0-128ca0ec-03de-42d6-8c49-ad47167c640a success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750858961292_127.0.0.1_49176
+2025-06-25T21:42:41.395+0800	INFO	rpc/rpc_client.go:486	config-0-128ca0ec-03de-42d6-8c49-ad47167c640a notify connected event to listeners , connectionId=1750858961292_127.0.0.1_49176
+2025-06-25T21:42:41.395+0800	INFO	config_client/config_connection_event_listener.go:38	[ConfigConnectionEventListener] connect to config server for taskId: 0
+2025-06-25T21:42:41.424+0800	WARN	cache/disk_cache.go:155	read cache file Config Encrypted Data Key failed. cause file doesn't exist, file path: /Users/a123/Library/Caches/JetBrains/GoLand2024.3/tmp/GoLand/cache/config/encrypted-data-key/config.toml@@cmdb@@cmdb.: file not exist
+2025-06-25T21:42:41.424+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<learn-go> with instance:<{"instanceId":"","ip":"127.0.0.1","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"learn-go-id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T21:42:41.431+0800	INFO	naming_grpc/naming_grpc_proxy.go:177	Subscribe Service namespaceId:<cmdb>, serviceName:<learn-go>, groupName:<cmdb>, clusters:<DEFAULT>
+2025-06-25T21:42:41.473+0800	INFO	naming_cache/service_info_holder.go:96	service key:cmdb@@learn-go@@DEFAULT was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"127.0.0.1#8090#DEFAULT#cmdb@@learn-go","ip":"127.0.0.1","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@learn-go","metadata":{"activeConns":"200","instanceId":"learn-go-id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1750858961464,"clusters":"DEFAULT","name":"learn-go","groupName":"cmdb","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2025-06-25T23:14:28.420+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55652
+2025-06-25T23:14:28.421+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=5b5fec22-09bc-4b62-8995-f8f6626c797e)
+2025-06-25T23:14:28.421+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T23:14:28.421+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T23:14:28.421+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T23:14:28.421+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 5b5fec22-09bc-4b62-8995-f8f6626c797e try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T23:14:28.421+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T23:14:28.421+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T23:14:28.421+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T23:14:28.422+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T23:14:28.534+0800	INFO	rpc/rpc_client.go:337	5b5fec22-09bc-4b62-8995-f8f6626c797e success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750864468427_127.0.0.1_62096
+2025-06-25T23:14:28.535+0800	INFO	rpc/rpc_client.go:486	5b5fec22-09bc-4b62-8995-f8f6626c797e notify connected event to listeners , connectionId=1750864468427_127.0.0.1_62096
+2025-06-25T23:15:55.499+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 54997
+2025-06-25T23:15:55.500+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=ce49cb7a-c713-474b-8453-373d0eb029d5)
+2025-06-25T23:15:55.500+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T23:15:55.500+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T23:15:55.501+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T23:15:55.501+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] ce49cb7a-c713-474b-8453-373d0eb029d5 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T23:15:55.501+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T23:15:55.501+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T23:15:55.501+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T23:15:55.501+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T23:15:55.606+0800	INFO	rpc/rpc_client.go:337	ce49cb7a-c713-474b-8453-373d0eb029d5 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750864555503_127.0.0.1_62324
+2025-06-25T23:15:55.606+0800	INFO	rpc/rpc_client.go:486	ce49cb7a-c713-474b-8453-373d0eb029d5 notify connected event to listeners , connectionId=1750864555503_127.0.0.1_62324
+2025-06-25T23:15:55.715+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<node1> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"node1~id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:15:55.715+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<node3> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"node3~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:15:55.715+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<node2> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8091,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"node2~id","ip":"192.168.0.100","port":"8091","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:17:36.268+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55927
+2025-06-25T23:17:36.269+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=ec3a3f57-a95f-4615-aaac-249a0cc5ea23)
+2025-06-25T23:17:36.269+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T23:17:36.269+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T23:17:36.269+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T23:17:36.269+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] ec3a3f57-a95f-4615-aaac-249a0cc5ea23 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T23:17:36.269+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T23:17:36.269+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T23:17:36.269+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T23:17:36.270+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T23:17:36.374+0800	INFO	rpc/rpc_client.go:337	ec3a3f57-a95f-4615-aaac-249a0cc5ea23 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750864656270_127.0.0.1_62602
+2025-06-25T23:17:36.374+0800	INFO	rpc/rpc_client.go:486	ec3a3f57-a95f-4615-aaac-249a0cc5ea23 notify connected event to listeners , connectionId=1750864656270_127.0.0.1_62602
+2025-06-25T23:17:36.504+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:17:36.504+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8091,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8091","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:17:36.504+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:23:37.420+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55093
+2025-06-25T23:23:37.420+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=26e22840-35e8-44cc-8679-0e67d7edd0cd)
+2025-06-25T23:23:37.420+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T23:23:37.420+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T23:23:37.420+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T23:23:37.420+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 26e22840-35e8-44cc-8679-0e67d7edd0cd try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T23:23:37.420+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T23:23:37.420+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T23:23:37.420+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T23:23:37.421+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T23:23:37.526+0800	INFO	rpc/rpc_client.go:337	26e22840-35e8-44cc-8679-0e67d7edd0cd success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750865017422_127.0.0.1_63546
+2025-06-25T23:23:37.626+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:23:37.626+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8091,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8091","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:25:23.518+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55608
+2025-06-25T23:25:23.518+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=2cb29d1e-73e1-494b-b399-0f1a25bf229e)
+2025-06-25T23:25:23.518+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T23:25:23.518+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T23:25:23.518+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T23:25:23.518+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 2cb29d1e-73e1-494b-b399-0f1a25bf229e try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T23:25:23.519+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T23:25:23.519+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T23:25:23.519+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T23:25:23.520+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T23:25:23.624+0800	INFO	rpc/rpc_client.go:337	2cb29d1e-73e1-494b-b399-0f1a25bf229e success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750865123523_127.0.0.1_63829
+2025-06-25T23:25:23.717+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8091,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8091","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:25:23.717+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:25:23.717+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:30:23.882+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55054
+2025-06-25T23:30:23.883+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=304a4f54-dfe3-47fa-a47d-f3ec3956e0c3)
+2025-06-25T23:30:23.883+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T23:30:23.883+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T23:30:23.883+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T23:30:23.883+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 304a4f54-dfe3-47fa-a47d-f3ec3956e0c3 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T23:30:23.883+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T23:30:23.883+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T23:30:23.883+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T23:30:23.884+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T23:30:23.988+0800	INFO	rpc/rpc_client.go:337	304a4f54-dfe3-47fa-a47d-f3ec3956e0c3 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750865423885_127.0.0.1_64643
+2025-06-25T23:30:23.988+0800	INFO	rpc/rpc_client.go:486	304a4f54-dfe3-47fa-a47d-f3ec3956e0c3 notify connected event to listeners , connectionId=1750865423885_127.0.0.1_64643
+2025-06-25T23:30:24.113+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:30:41.165+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55101
+2025-06-25T23:30:41.166+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=991b1951-3f95-4f7e-9031-802f7763f865)
+2025-06-25T23:30:41.166+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T23:30:41.166+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T23:30:41.166+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T23:30:41.166+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 991b1951-3f95-4f7e-9031-802f7763f865 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T23:30:41.166+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T23:30:41.166+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T23:30:41.166+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T23:30:41.167+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T23:30:41.271+0800	INFO	rpc/rpc_client.go:337	991b1951-3f95-4f7e-9031-802f7763f865 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750865441168_127.0.0.1_64693
+2025-06-25T23:30:41.362+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:31:09.573+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 54980
+2025-06-25T23:31:09.574+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=4372a14f-9f6f-4ad4-8ad8-cef962dd9d6b)
+2025-06-25T23:31:09.574+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T23:31:09.574+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T23:31:09.574+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T23:31:09.574+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] 4372a14f-9f6f-4ad4-8ad8-cef962dd9d6b try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T23:31:09.574+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T23:31:09.574+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T23:31:09.574+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T23:31:09.576+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T23:31:09.678+0800	INFO	rpc/rpc_client.go:337	4372a14f-9f6f-4ad4-8ad8-cef962dd9d6b success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750865469577_127.0.0.1_64768
+2025-06-25T23:31:09.678+0800	INFO	rpc/rpc_client.go:486	4372a14f-9f6f-4ad4-8ad8-cef962dd9d6b notify connected event to listeners , connectionId=1750865469577_127.0.0.1_64768
+2025-06-25T23:31:09.780+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8091,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8091","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-25T23:31:22.149+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55354
+2025-06-25T23:31:22.150+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=db7140e3-210a-4421-a6fb-5d53101bb036)
+2025-06-25T23:31:22.150+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-25T23:31:22.150+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-25T23:31:22.150+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-25T23:31:22.150+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] db7140e3-210a-4421-a6fb-5d53101bb036 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-25T23:31:22.150+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-25T23:31:22.150+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-25T23:31:22.150+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-25T23:31:22.151+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-25T23:31:22.254+0800	INFO	rpc/rpc_client.go:337	db7140e3-210a-4421-a6fb-5d53101bb036 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750865482152_127.0.0.1_64803
+2025-06-25T23:31:22.254+0800	INFO	rpc/rpc_client.go:486	db7140e3-210a-4421-a6fb-5d53101bb036 notify connected event to listeners , connectionId=1750865482152_127.0.0.1_64803
+2025-06-25T23:31:22.347+0800	INFO	naming_grpc/naming_grpc_proxy.go:95	register instance namespaceId:<cmdb>,serviceName:<gse> with instance:<{"instanceId":"","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":0,"ipDeleteTimeout":0,"instanceHeartBeatTimeOut":0}>
+2025-06-26T00:19:06.773+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55153
+2025-06-26T00:19:06.773+0800	INFO	rpc/rpc_client.go:157	init rpc client for name %!(EXTRA string=f24f29dc-c259-4937-b065-e3189cdc0b06)
+2025-06-26T00:19:06.773+0800	INFO	rpc/rpc_client.go:166	get app conn labels from client config map[] 
+2025-06-26T00:19:06.773+0800	INFO	rpc/rpc_client.go:168	get app conn labels from env map[] 
+2025-06-26T00:19:06.773+0800	INFO	rpc/rpc_client.go:171	final app conn labels : map[] 
+2025-06-26T00:19:06.774+0800	INFO	rpc/rpc_client.go:327	[RpcClient.Start] f24f29dc-c259-4937-b065-e3189cdc0b06 try to connect to server on start up, server: {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848}
+2025-06-26T00:19:06.774+0800	INFO	rpc/grpc_client.go:175	check tls config %!(EXTRA *constant.TLSConfig=&{false false false    })
+2025-06-26T00:19:06.774+0800	INFO	rpc/grpc_client.go:180	try to get tls config from env
+2025-06-26T00:19:06.774+0800	INFO	rpc/grpc_client.go:189	 tls config from env is not enable
+2025-06-26T00:19:06.774+0800	INFO	util/common.go:96	Local IP:192.168.0.100
+2025-06-26T00:19:06.880+0800	INFO	rpc/rpc_client.go:337	f24f29dc-c259-4937-b065-e3189cdc0b06 success to connect to server {serverIp:127.0.0.1 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1750868346777_127.0.0.1_55225
+2025-06-26T00:19:06.988+0800	INFO	naming_grpc/naming_grpc_proxy.go:177	Subscribe Service namespaceId:<cmdb>, serviceName:<gse>, groupName:<cmdb>, clusters:<DEFAULT>
+2025-06-26T00:19:07.002+0800	INFO	naming_cache/service_info_holder.go:96	service key:cmdb@@gse@@DEFAULT was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"192.168.0.100#8091#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8091,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8091","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.0.100#8092#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.0.100#8090#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1750868346992,"clusters":"DEFAULT","name":"gse","groupName":"cmdb","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2025-06-26T00:22:10.103+0800	INFO	naming_cache/service_info_holder.go:96	service key:cmdb@@gse@@DEFAULT was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"192.168.0.100#8091#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8091,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8091","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.0.100#8092#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1750868530102,"clusters":"DEFAULT","name":"gse","groupName":"cmdb","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2025-06-26T00:22:34.930+0800	INFO	naming_cache/service_info_holder.go:96	service key:cmdb@@gse@@DEFAULT was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"192.168.0.100#8092#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1750868554929,"clusters":"DEFAULT","name":"gse","groupName":"cmdb","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2025-06-26T00:22:45.952+0800	WARN	naming_cache/service_info_holder.go:81	instance list is empty, updateCacheWhenEmpty is set to false, callback is not triggered. service name:gse
+2025-06-26T00:23:56.011+0800	INFO	naming_cache/service_info_holder.go:96	service key:cmdb@@gse@@DEFAULT was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"192.168.0.100#8091#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8091,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8091","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.0.100#8092#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.0.100#8090#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8090,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8090","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1750868636009,"clusters":"DEFAULT","name":"gse","groupName":"cmdb","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2025-06-26T00:24:30.356+0800	INFO	naming_cache/service_info_holder.go:96	service key:cmdb@@gse@@DEFAULT was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"192.168.0.100#8091#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8091,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8091","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.0.100#8092#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1750868670355,"clusters":"DEFAULT","name":"gse","groupName":"cmdb","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2025-06-26T00:24:31.997+0800	INFO	naming_cache/service_info_holder.go:96	service key:cmdb@@gse@@DEFAULT was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"192.168.0.100#8092#DEFAULT#cmdb@@gse","ip":"192.168.0.100","port":8092,"weight":10,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"cmdb@@gse","metadata":{"activeConns":"200","instanceId":"gse~id","ip":"192.168.0.100","port":"8092","status":"active"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1750868671996,"clusters":"DEFAULT","name":"gse","groupName":"cmdb","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2025-06-26T00:24:33.133+0800	WARN	naming_cache/service_info_holder.go:81	instance list is empty, updateCacheWhenEmpty is set to false, callback is not triggered. service name:gse
