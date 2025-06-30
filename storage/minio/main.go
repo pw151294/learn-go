@@ -1,58 +1,52 @@
 package main
 
 import (
-	"context"
 	"flag"
-	"github.com/minio/minio-go/v7"
+	"iflytek.com/weipan4/learn-go/storage"
 	"iflytek.com/weipan4/learn-go/storage/minio/config"
 	"log"
 )
 
-var configFile = flag.String("configFile", "storage/minio/config/config.toml", "path of minio config file")
+var configPath = flag.String("configFile", "storage/minio/config/config.toml", "config file of minio")
 
 const (
-	bucketName   = "weipan4-bucket"
-	location     = "us-east-1"
-	objectName   = "install.pdf"
+	pkgOs        = "linux"
+	pkgArch      = "amd64"
+	pkgName      = "discover"
 	filePath     = "/Users/a123/Downloads/working/2025.6/cmdb/discover"
-	downloadPath = "/Users/a123/Downloads/working/2025.6/minio/auto_discovery"
+	downloadPath = "/Users/a123/Downloads/working/2025.6/minio"
 )
 
-func UploadFile(info ObjectInfo) (minio.UploadInfo, error) {
-	return fHandler.doUpload(info)
-}
-
-func DownloadFile(info ObjectInfo) error {
-	return fHandler.doDownload(info)
-}
-
 func main() {
-	err := config.InitConfig(*configFile)
+	flag.Parse()
+	err := config.InitConfig(*configPath)
 	if err != nil {
-		log.Fatal(err)
-	}
-	ctx := context.Background()
-	if err = InitFileHandler(ctx); err != nil {
 		log.Fatal(err)
 	}
 
-	objInfo := NewObjectInfo(
-		WithBucketName(bucketName),
-		WithObjectName(objectName),
-		WithFilePath(filePath))
-	fi, err := UploadFile(*objInfo)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Printf("upload file %s successfully with %d bytes", objInfo.FilePath, fi.Size)
+	// 初始化storage
+	initializer := storage.GetStorageInitFunc(StorageType)
+	s := initializer()
 
-	objInfo = NewObjectInfo(
-		WithBucketName(bucketName),
-		WithObjectName(objectName),
-		WithFilePath(downloadPath))
-	err = DownloadFile(*objInfo)
+	// 上传文件
+	ulps := storage.NewPluginPkgUploadProps(
+		storage.WithUploadOs(pkgOs),
+		storage.WithUploadArch(pkgArch),
+		storage.WithUploadFilepath(filePath))
+	err = s.UploadFile(ulps)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("upload fail: %v", err)
 	}
-	log.Printf("download file %s successfully with %d bytes", objInfo.FilePath, fi.Size)
+
+	// 下载文件
+	dwlps := storage.NewPluginPkgDownloadProps(
+		storage.WithDownloadOs(pkgOs),
+		storage.WithDownloadArch(pkgArch),
+		storage.WithDownloadPkgName(pkgName),
+		storage.WithDestPath(downloadPath),
+	)
+	err = s.DownloadFile(dwlps)
+	if err != nil {
+		log.Fatalf("download fail: %v", err)
+	}
 }
