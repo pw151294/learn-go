@@ -1,7 +1,7 @@
 package nacos
 
 import (
-	"iflytek.com/weipan4/learn-go/http/host"
+	"iflytek.com/weipan4/learn-go/net/host"
 	"strconv"
 )
 

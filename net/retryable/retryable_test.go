@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-const filepath = "http/retryable/config.json"
+const filepath = "net/retryable/config.json"
 
 func TestRetryableHttpClient(t *testing.T) {
 	zap.InitLogger(zap.LogPath)

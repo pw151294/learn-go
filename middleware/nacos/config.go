@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"github.com/nacos-group/nacos-sdk-go/v2/model"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
-	"iflytek.com/weipan4/learn-go/http/host"
 	"iflytek.com/weipan4/learn-go/logger/zap"
+	"iflytek.com/weipan4/learn-go/net/host"
 	"os"
 )
 

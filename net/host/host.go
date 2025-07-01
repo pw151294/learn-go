@@ -115,7 +115,7 @@ func GetOutboundIP(urls []string) (net.IP, error) {
 					continue
 				}
 				if len(u.Port()) == 0 {
-					if u.Scheme == "http" {
+					if u.Scheme == "net" {
 						u.Host = u.Host + ":80"
 					}
 					if u.Scheme == "https" {

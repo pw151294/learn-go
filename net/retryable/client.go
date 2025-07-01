@@ -17,7 +17,7 @@ var RetryCli *retryablehttp.Client
 func InitRetryableHttpClient(filepath string) {
 	config, err := readConfig(filepath)
 	if err != nil {
-		log.Fatalf("read retryable http client config failed: %v", err)
+		log.Fatalf("read retryable net client config failed: %v", err)
 	}
 
 	cliCfg := NewHttpClientConfig(
