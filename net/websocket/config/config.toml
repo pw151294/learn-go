@@ -1,0 +1,4 @@
+serverPort = 8081
+serverIp = "127.0.0.1"
+heartbeatInterval = "10s"
+retryLimit = 3

@@ -1,8 +1,11 @@
 package main
 
 import (
+	"flag"
+	"fmt"
 	"iflytek.com/weipan4/learn-go/logger/zap"
 	"iflytek.com/weipan4/learn-go/net/host"
+	"iflytek.com/weipan4/learn-go/net/websocket/config"
 	"iflytek.com/weipan4/learn-go/net/websocket/ws_handler"
 	"log"
 	"os"
@@ -11,16 +14,19 @@ import (
 	"time"
 )
 
-const (
-	wsUrlPrefix = "ws://"
-	wsUrlHost   = "127.0.0.1:8081"
-)
+var cfgPath = flag.String("cfgPath", "net/websocket/config/config.toml", "websocket config file path")
 
 func main() {
+	flag.Parse()
+
 	host.InitHostInfo(false)
 	zap.InitLogger("net/websocket/logs/websocket.log")
+	if err := config.InitConfig(*cfgPath); err != nil {
+		log.Fatalf("read websocket config failed: %v", err)
+	}
+
 	wsh := ws_handler.NewWebSocketHandler(
-		ws_handler.WithWsUrl(wsUrlPrefix+wsUrlHost),
+		ws_handler.WithWsUrl(fmt.Sprintf("ws://%s:%s", config.WskCfg.ServerIp, config.WskCfg.ServerPort)),
 		ws_handler.WithOnMessage(func(bytes []byte) {
 			zap.GetLogger().Info("receive message. begin handling messages......")
 			time.Sleep(1 * time.Second)

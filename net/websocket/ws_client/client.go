@@ -9,11 +9,6 @@ import (
 	"time"
 )
 
-const (
-	readTimeout = 60 * time.Second
-	retryLimit  = 3
-)
-
 type WebSocketClient struct {
 	wskConn   *websocket.Conn
 	isOpen    bool
@@ -44,10 +39,6 @@ func (wsc *WebSocketClient) ReadLoop() {
 			wsc.onError(fmt.Errorf("invalid message type: %v, only support text or binary msg", messageType))
 		} else if messageType == websocket.BinaryMessage {
 			if wsc.onData != nil {
-				if err = wsc.wskConn.SetReadDeadline(time.Now().Add(readTimeout)); err != nil {
-					wsc.onError(err)
-					break
-				}
 				if err = wsc.onData(rawMessage); err != nil {
 					wsc.onError(err)
 					break

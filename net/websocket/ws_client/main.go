@@ -1,10 +1,12 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"github.com/gorilla/websocket"
 	"iflytek.com/weipan4/learn-go/logger/zap"
 	"iflytek.com/weipan4/learn-go/net/host"
+	"iflytek.com/weipan4/learn-go/net/websocket/config"
 	"log"
 	"net/http"
 	"os"
@@ -13,12 +15,17 @@ import (
 	"time"
 )
 
-const port = 8081
+var cfgPath = flag.String("cfgPath", "net/websocket/config/config.toml", "websocket config file path")
 
 func main() {
+	flag.Parse()
+
 	// 初始化基本信息
 	host.InitHostInfo(false)
 	zap.InitLogger("net/websocket/logs/websocket.log")
+	if err := config.InitConfig(*cfgPath); err != nil {
+		log.Fatalf("read websocket config failed: %v", err)
+	}
 
 	// 初始化客户端
 	wsc := NewWebSocketClient(
@@ -57,7 +64,7 @@ func main() {
 	})
 
 	go func() {
-		if err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil); err != nil {
+		if err := http.ListenAndServe(fmt.Sprintf(":%d", config.WskCfg.ServerPort), nil); err != nil {
 			log.Fatal("start http server failed", err)
 		}
 	}()

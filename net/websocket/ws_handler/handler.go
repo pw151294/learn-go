@@ -8,14 +8,10 @@ import (
 	"github.com/gorilla/websocket"
 	"iflytek.com/weipan4/learn-go/logger/zap"
 	"iflytek.com/weipan4/learn-go/net/host"
+	"iflytek.com/weipan4/learn-go/net/websocket/config"
 	"net/http"
 	"sync"
 	"time"
-)
-
-const (
-	heartbeatInterval = 10 * time.Second
-	retryLimit        = 3
 )
 
 type WebsocketHandler struct {
@@ -131,7 +127,7 @@ func (wsh *WebsocketHandler) StartPing() {
 		zap.GetLogger().Warn("send websocket ping message failed", "message", err)
 	}
 	// 开启定时任务
-	ticker := time.NewTicker(heartbeatInterval)
+	ticker := time.NewTicker(config.WskCfg.HeartbeatInterval)
 	for {
 		if !wsh.isOpen {
 			return
@@ -160,8 +156,8 @@ func (wsh *WebsocketHandler) ReceiveMessageLoop() {
 		messageType, rawMessage, err := wsh.wsConn.ReadMessage()
 		if err != nil {
 			retryCount++
-			if retryCount >= retryLimit {
-				zap.GetLogger().Error(fmt.Sprintf("reach the retry limit: %d", retryLimit), "message", err)
+			if retryCount >= config.WskCfg.RetryLimit {
+				zap.GetLogger().Error(fmt.Sprintf("reach the retry limit: %d", config.WskCfg.RetryLimit), "message", err)
 				wsh.onError(err)
 				break
 			}
