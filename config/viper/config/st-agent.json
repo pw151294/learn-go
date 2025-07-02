@@ -1,0 +1,26 @@
+{
+  "agent": {
+    "agent_id": "1",
+    "endpoint": "172.30.34.73",
+    "port": 8090,
+    "is_https": false
+  },
+  "update": {
+    "self_update": true,
+    "endpoint": "172.30.34.73",
+    "port": 8091,
+    "self_update_schedule_day": 1,
+    "is_https": false
+  },
+  "proxy": [
+  ],
+  "path": {
+    "data_path": "/var/lib/iflytek/st",
+    "temp_path": "/tmp/st",
+    "log_path": "/var/log/iflytek/st",
+    "plugin_path": "/usr/local/stplugins/"
+  },
+  "plugins": {
+    "file_transfer_limit": 0
+  }
+}

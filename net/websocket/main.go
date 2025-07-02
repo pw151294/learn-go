@@ -26,7 +26,7 @@ func main() {
 	}
 
 	wsh := ws_handler.NewWebSocketHandler(
-		ws_handler.WithWsUrl(fmt.Sprintf("ws://%s:%s", config.WskCfg.ServerIp, config.WskCfg.ServerPort)),
+		ws_handler.WithWsUrl(fmt.Sprintf("ws://%s:%d", config.WskCfg.ServerIp, config.WskCfg.ServerPort)),
 		ws_handler.WithOnMessage(func(bytes []byte) {
 			zap.GetLogger().Info("receive message. begin handling messages......")
 			time.Sleep(1 * time.Second)
