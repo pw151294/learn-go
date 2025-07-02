@@ -22,7 +22,7 @@ type RedisConfig struct {
 }
 
 func readConfig() *RedisConfig {
-	fn := filepath.Join("/Users/a123/Downloads/go/learn-go/learn-go/storage/redis", "redis.json")
+	fn := filepath.Join("storage/redis/redigo", "redis.json")
 	bytes, err := os.ReadFile(fn)
 	if err != nil {
 		log.Fatalf("read redis config file failed: %v", err)
