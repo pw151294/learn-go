@@ -1,14 +1,12 @@
-package main
+package middlewares
 
 import (
 	"context"
 	"fmt"
 	"github.com/kataras/iris/v12"
-	"github.com/kataras/iris/v12/mvc"
 	"iflytek.com/weipan4/learn-go/logger/zap"
 	"iflytek.com/weipan4/learn-go/net/iris/config"
-	"iflytek.com/weipan4/learn-go/net/iris/controller"
-	go_redis "iflytek.com/weipan4/learn-go/storage/redis/go-redis"
+	"iflytek.com/weipan4/learn-go/storage/redis/go-redis"
 	"net/http"
 	"strings"
 	"time"
@@ -18,22 +16,7 @@ const (
 	gseConnectionPrefix = "GSE:CONNECTIONS:"
 )
 
-func InitRouter() *iris.Application {
-	app := iris.New()
-	app.Logger().SetLevel("info")
-	ctx, cancelFunc := context.WithCancel(context.Background())
-	defer cancelFunc()
-
-	// 注册gse控制器和路由
-	gseParty := app.Party("/gse", redirectMiddleware)
-	gse := mvc.New(gseParty)
-	gse.Register(ctx)
-	gse.Handle(new(controller.GseController))
-
-	return app
-}
-
-func redirectMiddleware(ctx iris.Context) {
+func RedirectMiddleware(ctx iris.Context) {
 	// 解析出实例id
 	params := make(map[string]interface{})
 	if err := ctx.ReadJSON(&params); err != nil {

@@ -6,6 +6,7 @@ import (
 	"github.com/kataras/iris/v12"
 	"iflytek.com/weipan4/learn-go/logger/zap"
 	"iflytek.com/weipan4/learn-go/net/iris/config"
+	"iflytek.com/weipan4/learn-go/net/iris/router"
 	go_redis "iflytek.com/weipan4/learn-go/storage/redis/go-redis"
 	redis_config "iflytek.com/weipan4/learn-go/storage/redis/go-redis/config"
 	"log"
@@ -37,26 +38,10 @@ func main() {
 	}
 
 	// 启动服务器
-	r1 := InitRouter()
-	address := fmt.Sprintf("%s:%d", config.Cfg.Server.Host, 8090)
+	r := router.InitRouter()
+	address := fmt.Sprintf("%s:%d", config.Cfg.Server.Host, config.Cfg.Server.Port)
 	go func() {
-		if err := r1.Run(iris.Addr(address)); err != nil {
-			log.Fatal(err)
-		}
-	}()
-
-	r2 := InitRouter()
-	address = fmt.Sprintf("%s:%d", config.Cfg.Server.Host, 8091)
-	go func() {
-		if err := r2.Run(iris.Addr(address)); err != nil {
-			log.Fatal(err)
-		}
-	}()
-
-	r3 := InitRouter()
-	address = fmt.Sprintf("%s:%d", config.Cfg.Server.Host, 8092)
-	go func() {
-		if err := r3.Run(iris.Addr(address)); err != nil {
+		if err := r.Run(iris.Addr(address)); err != nil {
 			log.Fatal(err)
 		}
 	}()

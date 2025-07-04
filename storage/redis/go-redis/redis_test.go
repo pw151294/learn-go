@@ -173,6 +173,22 @@ func TestHSet(t *testing.T) {
 	t.Log("set data to redis success!", "hash", hash, "key", instanceId, "val", val)
 }
 
+func TestGetKeys(t *testing.T) {
+	config.InitConfig(configFile)
+	InitRedis()
+
+	ctx, cancelFunc := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancelFunc()
+	keys, _, err := redisCli.ScanType(ctx, 0, "GSE:CONNECTIONS:*", 10000, "hash").Result()
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, key := range keys {
+		hKeys, _ := redisCli.HKeys(ctx, key).Result()
+		t.Log("gse", key, "agent ids", hKeys)
+	}
+}
+
 func TestHGet(t *testing.T) {
 	config.InitConfig(configFile)
 	InitRedis()
