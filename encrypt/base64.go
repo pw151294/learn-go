@@ -1,4 +1,4 @@
-package main
+package encrypt
 
 import "encoding/base64"
 

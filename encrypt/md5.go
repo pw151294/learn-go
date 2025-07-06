@@ -1,4 +1,4 @@
-package main
+package encrypt
 
 import (
 	"crypto/md5"
@@ -10,8 +10,4 @@ func MD5Encode(text string) string {
 	hash.Write([]byte(text))
 	hashBytes := hash.Sum(nil)
 	return hex.EncodeToString(hashBytes)
-}
-
-func main() {
-
 }

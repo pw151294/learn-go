@@ -33,12 +33,14 @@ type Redis interface {
 	IncrBy(ctx context.Context, key string, value int64) *redis.IntCmd
 	Exists(ctx context.Context, keys ...string) *redis.IntCmd
 	SetEx(ctx context.Context, key string, value interface{}, expiration time.Duration) *redis.StatusCmd
+	Expire(ctx context.Context, key string, expiration time.Duration) *redis.BoolCmd
 	ScanType(ctx context.Context, cursor uint64, match string, count int64, keyType string) *redis.ScanCmd
 
 	// hset operator
 	HGetAll(ctx context.Context, key string) *redis.MapStringStringCmd
 	HSet(ctx context.Context, key string, values ...interface{}) *redis.IntCmd
 	HSetEX(ctx context.Context, key string, fieldsAndValues ...string) *redis.IntCmd
+	HExpire(ctx context.Context, key string, expiration time.Duration, fields ...string) *redis.IntSliceCmd
 	HDel(ctx context.Context, key string, fields ...string) *redis.IntCmd
 	HKeys(ctx context.Context, key string) *redis.StringSliceCmd
 	HExists(ctx context.Context, key, field string) *redis.BoolCmd

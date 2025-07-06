@@ -38,6 +38,8 @@ echo "使用日志路径: $LOG_PATH"
 ./node/node --cfgPath="$CFG_PATH" --logPath="$LOG_PATH/node1.log" --serviceName="gse" --groupName="cmdb" --port=8090 &
 ./node/node --cfgPath="$CFG_PATH" --logPath="$LOG_PATH/node2.log" --serviceName="gse" --groupName="cmdb" --port=8091 &
 ./node/node --cfgPath="$CFG_PATH" --logPath="$LOG_PATH/node3.log" --serviceName="gse" --groupName="cmdb" --port=8092 &
+./node/node --cfgPath="$CFG_PATH" --logPath="$LOG_PATH/node4.log" --serviceName="gse" --groupName="cmdb" --port=8093 &
+./node/node --cfgPath="$CFG_PATH" --logPath="$LOG_PATH/node5.log" --serviceName="gse" --groupName="cmdb" --port=8094 &
 
 
 echo "所有节点已启动"

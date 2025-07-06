@@ -2,15 +2,25 @@ package nacos
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/nacos-group/nacos-sdk-go/v2/model"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
+	"github.com/redis/go-redis/v9"
+	"iflytek.com/weipan4/learn-go/encrypt"
+	"iflytek.com/weipan4/learn-go/lock/redislock"
 	"iflytek.com/weipan4/learn-go/logger/zap"
 	"iflytek.com/weipan4/learn-go/net/host"
+	go_redis "iflytek.com/weipan4/learn-go/storage/redis/go-redis"
+	"math/rand"
 	"os"
+	"sort"
+	"strings"
+	"time"
 )
 
 var (
 	NacosCfg *NacosConfig
+	Port     int
 )
 
 type RegisterInstanceParamOptions func(param *vo.RegisterInstanceParam)
@@ -118,14 +128,31 @@ func newSubscribeParam(opts ...SubScribeParamOptions) *vo.SubscribeParam {
 }
 
 func SubScribeCallback(services []model.Instance, err error) {
-	zap.GetLogger().Info("subscribed service list info changed")
-	if len(services) > 0 {
-		for _, s := range services {
-			zap.GetLogger().Info("subscribed service info",
-				"service name", s.ServiceName, "ip", s.Ip, "port", s.Port, "instance id", s.InstanceId)
+	zap.GetLogger().Info("subscribed service list info changed", "port", Port)
+	//获取instance实例id
+	insIds := make([]string, 0)
+	for _, svc := range services {
+		if svc.Healthy {
+			insIds = append(insIds, svc.InstanceId)
 		}
-	} else {
-		zap.GetLogger().Warn("subscribed service list is empty")
+	}
+	sort.Strings(insIds) //排序 为了保证updateId的唯一性
+	uid := encrypt.MD5Encode(strings.Join(insIds, ":"))
+	zap.GetLogger().Info(fmt.Sprintf("update id: %s", uid))
+
+	// 初始化分布式锁
+	rand.NewSource(time.Now().UnixNano())
+	redisCli := go_redis.GetClient().(*redis.Client)
+	builder := &redislock.Builder{}
+	rl, err := builder.WithRedisClient(redisCli).WithLockName(uid).WithExpire(3 * time.Second).Build()
+	if err != nil {
+		zap.GetLogger().Error("create redis lock failed", "message", err)
+		return
+	}
+	if rl.TryLock() {
+		defer rl.Unlock()
+		zap.GetLogger().Info("lock success! begin handle subscribe callback")
+		time.Sleep(time.Duration(rand.Intn(1000)) * time.Millisecond)
 	}
 }
 

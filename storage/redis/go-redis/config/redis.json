@@ -1,11 +1,11 @@
 {
-  "addrs": "127.0.0.1:6379",
+  "addrs": "172.31.65.35:26379,172.31.65.61:26379",
   "username": "",
-  "password": "",
+  "password": "DiIegiS2qGCVe7Cw",
   "db": 0,
   "useTLS": false,
-  "masterName": "",
-  "redisType": 0,
+  "masterName": "master6379",
+  "redisType": 2,
   "sentinelUsername": "",
   "sentinelPassword": ""
 }
