@@ -1,0 +1,10 @@
+{
+  "drive": "mysql",
+  "host": "172.31.65.35",
+  "port": "23306",
+  "user": "root",
+  "pwd": "bGMNFL$oML%M2jOt",
+  "database": "st_nodeman",
+  "showSql": true,
+  "log_path": "/Users/a123/Downloads/go/learn-go/learn-go/storage/mysql/xorm/logger/sql.log"
+}

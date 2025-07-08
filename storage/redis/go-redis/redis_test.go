@@ -278,7 +278,7 @@ func TestDelKey(t *testing.T) {
 
 	ctx, cancelFunc := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancelFunc()
-	err := redisCli.Del(ctx, "GSE:CONNECTIONS:172.30.34.73:884").Err()
+	err := redisCli.Del(ctx, "GSE:CONNECTIONS:172.30.34.73:8881").Err()
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -472,4 +472,98 @@ func TestHExpire(t *testing.T) {
 
 	exists, _ := redisCli.HExists(ctx, hash, insId).Result()
 	t.Log(exists)
+}
+
+func TestBuildRequest(t *testing.T) {
+	config.InitConfig(configFile)
+	InitRedis()
+	redisCli.Del(context.Background(), "GSE:CONNECTIONS:172.30.34.73:8883")
+	redisCli.Del(context.Background(), "GSE:CONNECTIONS:172.30.34.73:8881")
+	redisCli.Del(context.Background(), "GSE:CONNECTIONS:172.30.34.73:8882")
+	redisCli.Del(context.Background(), "GSE:CONNECTIONS:172.30.34.73:8884")
+
+	time.Sleep(3 * time.Second)
+
+	TestBatchInsert(t)
+
+	ports := []int{8881, 8882, 8883, 8884}
+	insIds := make([]string, 0)
+	rand.NewSource(time.Now().UnixNano())
+	for _, port := range ports {
+		hash := fmt.Sprintf(gseConnectionHash, "172.30.34.73", port)
+		hKeys, _ := redisCli.HKeys(context.Background(), hash).Result()
+		hk1 := hKeys[rand.Intn(5)]
+		hk2 := hKeys[5+rand.Intn(5)]
+		insIds = append(insIds, hk1, hk2)
+	}
+
+	req := struct {
+		Plugin   string   `json:"plugin"`
+		Version  string   `json:"version"`
+		Group    string   `json:"group"`
+		Os       string   `json:"os"`
+		Arch     string   `json:"arch"`
+		Instance []string `json:"instance"`
+	}{
+		Plugin:   "example",
+		Version:  "1.0.0",
+		Group:    "example",
+		Os:       "linux",
+		Arch:     "amd64",
+		Instance: insIds,
+	}
+	bytes, _ := json.Marshal(req)
+	t.Log("req: ", string(bytes))
+}
+
+func TestClassifyInstanceId(t *testing.T) {
+	config.InitConfig(configFile)
+	InitRedis()
+
+	instanceIds := []string{
+		"f9c68493-7280-4d63-8315-0bd6adf44b6f",
+		"a66b836d-5547-43ff-8a6d-dd761c2ceafa",
+		"3d4a02f2-6304-4759-850c-a3e17e87c85f",
+		"2c0b105a-fd08-4cd6-ad91-a4aae89e80d3",
+		"c613ab69-83af-47ed-a924-a2753587b67f",
+		"afbe3d5f-69c3-484e-bf41-3dbe732b3177",
+		"10195776-c353-4f17-9915-91668f4aab35",
+		"bb0a0f96-be64-4f49-8206-dd55f8ca2e3b",
+	}
+
+	// 查询出所有的gse命名空间
+	hashes, _, err := redisCli.ScanType(context.Background(), 0, "GSE:CONNECTIONS:*", 100000, "hash").Result()
+	if err != nil {
+		t.Fatal(err)
+	}
+	// 将数组转换成集合
+	idSet := make(map[string]struct{})
+	for _, id := range instanceIds {
+		idSet[id] = struct{}{}
+	}
+
+	gseToInsIds := make(map[string][]string) // key为gse服务地址 val为gse服务所连接的agent实例id
+	for _, h := range hashes {
+		hKeys, err := redisCli.HKeys(context.Background(), h).Result()
+		if err != nil {
+			continue
+		}
+		if len(hKeys) == 0 {
+			continue
+		}
+		gseSvc := strings.TrimPrefix(h, "GSE:CONNECTIONS:")
+		for _, hk := range hKeys {
+			if _, ok := idSet[hk]; !ok {
+				continue
+			}
+			if ids, ok := gseToInsIds[gseSvc]; ok {
+				gseToInsIds[gseSvc] = append(ids, hk)
+			} else {
+				gseToInsIds[gseSvc] = []string{hk}
+			}
+		}
+	}
+
+	bytes, _ := json.Marshal(gseToInsIds)
+	t.Log("gseToInsIds: ", string(bytes))
 }

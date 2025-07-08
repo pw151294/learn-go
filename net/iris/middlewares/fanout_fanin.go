@@ -135,6 +135,7 @@ func FanOutFanIn(ctx iris.Context) {
 		errs = append(errs, errors.New(fmt.Sprintf("parse result from gse node %s failed %s",
 			strings.TrimPrefix(curKey, gseConnectionPrefix), err.Error())))
 	}
+	ctx.Recorder().ResetBody()
 
 	// fan in
 	err = errors.Join(errs...)
