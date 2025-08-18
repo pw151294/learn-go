@@ -1,0 +1,9 @@
+{
+  "drive": "postgres",
+  "host": "172.31.65.35",
+  "port": 5432,
+  "user": "root",
+  "password": "bGMNFL$oML%M2jOt",
+  "database": "st_nodeman",
+  "sslmode": "disable"
+}

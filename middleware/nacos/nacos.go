@@ -5,6 +5,7 @@ import (
 	"github.com/nacos-group/nacos-sdk-go/v2/clients/config_client"
 	"github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client"
 	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
+	"github.com/nacos-group/nacos-sdk-go/v2/model"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
 	"iflytek.com/weipan4/learn-go/logger/zap"
 	"log"
@@ -140,4 +141,12 @@ func SubscribeService(opts []SubScribeParamOptions) error {
 	zap.GetLogger().Info("subscribe service success",
 		"service name", param.ServiceName, "group name", param.GroupName, "clusters", param.Clusters)
 	return nil
+}
+
+func SelectAllInstances(svcName, groupName string) ([]model.Instance, error) {
+	return namingClient.SelectAllInstances(vo.SelectAllInstancesParam{
+		Clusters:    []string{"DEFAULT"},
+		ServiceName: svcName,
+		GroupName:   groupName,
+	})
 }

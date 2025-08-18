@@ -12,6 +12,7 @@ import (
 	"math/rand"
 	"os"
 	"os/signal"
+	"path/filepath"
 	"strings"
 	"syscall"
 	"testing"
@@ -566,4 +567,33 @@ func TestClassifyInstanceId(t *testing.T) {
 
 	bytes, _ := json.Marshal(gseToInsIds)
 	t.Log("gseToInsIds: ", string(bytes))
+}
+
+func TestFilepathClean(t *testing.T) {
+	t.Log(filepath.Clean("./download/packages/"))
+}
+
+func TestExpireTime(t *testing.T) {
+	config.InitConfig(configFile)
+	InitRedis()
+
+	hash := "GSE:CONNECTIONS:172.31.65.61:8090"
+	key := "683f2c66-6996-4e5b-b41a-48c20868ee42"
+	ctx, cancelFunc := context.WithTimeout(context.Background(), 30*time.Second)
+	defer cancelFunc()
+	val, err := redisCli.HGet(ctx, hash, key).Result()
+	if err != nil {
+		t.Fatal(err)
+	}
+	metadata := ConnectionMetadata{}
+	if err := json.Unmarshal([]byte(val), &metadata); err != nil {
+		t.Fatal(err)
+	}
+	ex, err := time.Parse(time.DateTime, metadata.ExpireTime)
+	if err != nil {
+		t.Fatal(err)
+	}
+	now := time.Now().Format("2006-01-02 15:04:05")
+	p, _ := time.Parse(time.DateTime, now)
+	t.Log(ex.Before(p))
 }

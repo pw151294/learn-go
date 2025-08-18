@@ -38,6 +38,7 @@ type Redis interface {
 
 	// hset operator
 	HGetAll(ctx context.Context, key string) *redis.MapStringStringCmd
+	HGet(ctx context.Context, key, field string) *redis.StringCmd
 	HSet(ctx context.Context, key string, values ...interface{}) *redis.IntCmd
 	HSetEX(ctx context.Context, key string, fieldsAndValues ...string) *redis.IntCmd
 	HExpire(ctx context.Context, key string, expiration time.Duration, fields ...string) *redis.IntSliceCmd

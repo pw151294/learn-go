@@ -36,7 +36,7 @@ func (c *CustomTableMapper) Obj2Table(objName string) string { // 结构体名�
 
 func (c *CustomTableMapper) Table2Obj(tableName string) string { // 表名转换成结构体名称
 	tbName := strings.TrimPrefix(tableName, c.tablePrefix)  // BO_NODE_DEPLOY_TASK --> NODE_DEPLOY_TASK
-	return c.snakeMapper.Table2Obj(strings.ToLower(tbName)) // NODE_DEPLOY_TASK --> nodeDeployTask
+	return c.snakeMapper.Table2Obj(strings.ToLower(tbName)) // NODE_DEPLOY_TASK --> node_deploy_task --> NodeDeployTask
 }
 
 func InitEngine() error {
