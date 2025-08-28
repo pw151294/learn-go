@@ -5,6 +5,7 @@ go 1.23.0
 toolchain go1.23.4
 
 require (
+	github.com/apache/thrift v0.13.0
 	github.com/cloudwego/gopkg v0.1.5
 	github.com/cloudwego/hertz v0.10.2
 	github.com/cloudwego/kitex v0.14.1
