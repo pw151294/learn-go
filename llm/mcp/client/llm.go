@@ -46,73 +46,35 @@ func (l *LLMClient) callTool(name string, arguments map[string]interface{}) ([]m
 	return result.Content, nil
 }
 
-func (l *LLMClient) listToolCalls() ([]ToolCall, error) {
+func (l *LLMClient) Chat(userMessage, systemMessage string) ([]string, error) {
 	ctx, cancelFunc := context.WithTimeout(context.Background(), time.Minute*1)
 	defer cancelFunc()
-
 	listReq := mcp.ListToolsRequest{}
 	listRes, err := l.mcpCli.ListTools(ctx, listReq)
 	if err != nil {
 		return nil, err
 	}
 
-	return convertToolCalls(listRes.Tools), nil
-}
-
-func (l *LLMClient) listToolNames() ([]string, error) {
-	ctx, cancelFunc := context.WithTimeout(context.Background(), time.Minute*1)
-	defer cancelFunc()
-
-	request := mcp.ListToolsRequest{}
-	result, err := l.mcpCli.ListTools(ctx, request)
-	if err != nil {
-		return nil, err
-	}
-	if bytes, err := json.Marshal(result.Tools); err == nil {
-		log.Println(string(bytes))
-	}
-
-	toolNames := make([]string, 0, len(result.Tools))
-	for _, tool := range result.Tools {
-		toolNames = append(toolNames, tool.Name)
-	}
-	return toolNames, nil
-}
-
-func (l *LLMClient) Chat(toolCalls []ToolCall, userMessage, systemMessage string) ([]string, error) {
 	// 构建工具调用的参数
-	tools := make([]openai.ChatCompletionToolParam, 0, len(toolCalls))
-	for _, call := range toolCalls {
-		properties := make(map[string]ToolVariable)
-		requires := make([]string, 0, len(call.ToolVariables))
-		for _, v := range call.ToolVariables {
-			properties[v.Name] = v
-			if v.Required {
-				requires = append(requires, v.Name)
-			}
-		}
-		schema := ToolSchema{
-			Type:       "object",
-			Properties: properties,
-			Required:   requires,
-		}
-		params := make(map[string]interface{})
-		paramsBytes, err := json.Marshal(schema)
+	tools := make([]openai.ChatCompletionToolParam, 0, len(listRes.Tools))
+	for _, tool := range listRes.Tools {
+		paramsBytes, err := json.Marshal(tool.InputSchema)
 		if err != nil {
 			continue
 		}
-		if err = json.Unmarshal(paramsBytes, &params); err != nil {
+		params := make(map[string]interface{})
+		if err := json.Unmarshal(paramsBytes, &params); err != nil {
 			continue
 		}
-		tool := openai.ChatCompletionToolParam{
-			Function: openai.FunctionDefinitionParam{
-				Name:        call.ToolName,
+		toolParam := openai.ChatCompletionToolParam{
+			Function: shared.FunctionDefinitionParam{
+				Name:        tool.Name,
 				Strict:      param.NewOpt(true),
-				Description: param.NewOpt(call.Description),
-				Parameters:  shared.FunctionParameters(params),
+				Description: param.NewOpt(tool.Description),
+				Parameters:  openai.FunctionParameters(params),
 			},
 		}
-		tools = append(tools, tool)
+		tools = append(tools, toolParam)
 	}
 
 	// 构建大模型对话的message
@@ -120,8 +82,6 @@ func (l *LLMClient) Chat(toolCalls []ToolCall, userMessage, systemMessage string
 		openai.UserMessage(userMessage),
 		openai.SystemMessage(systemMessage),
 	}
-	ctx, cancelFunc := context.WithTimeout(context.Background(), time.Minute*1)
-	defer cancelFunc()
 
 	// 对话
 	res, err := l.openaiCli.Chat.Completions.New(ctx, openai.ChatCompletionNewParams{
@@ -158,44 +118,6 @@ func (l *LLMClient) Chat(toolCalls []ToolCall, userMessage, systemMessage string
 		}
 	}
 	return texts, nil
-}
-
-func convertToolCalls(tools []mcp.Tool) []ToolCall {
-	toolCalls := make([]ToolCall, 0, len(tools))
-	for _, tool := range tools {
-		toolCalls = append(toolCalls, convertToolCall(tool))
-	}
-	return toolCalls
-}
-
-func convertToolCall(tool mcp.Tool) ToolCall {
-	toolCall := ToolCall{}
-	toolCall.ToolName = tool.Name
-	toolCall.Description = tool.Description
-	schema := tool.InputSchema
-	requiredVars := make(map[string]struct{})
-	for _, vName := range schema.Required {
-		requiredVars[vName] = struct{}{}
-	}
-
-	toolVars := make([]ToolVariable, 0, len(schema.Properties))
-	for vName, vProp := range schema.Properties {
-		varBytes, err := json.Marshal(vProp)
-		if err != nil {
-			continue
-		}
-		toolVar := ToolVariable{}
-		if err := json.Unmarshal(varBytes, &toolVar); err != nil {
-			continue
-		}
-		toolVar.Name = vName
-		_, ok := requiredVars[toolVar.Name]
-		toolVar.Required = ok
-		toolVars = append(toolVars, toolVar)
-	}
-
-	toolCall.ToolVariables = toolVars
-	return toolCall
 }
 
 func InitLLMClient() error {

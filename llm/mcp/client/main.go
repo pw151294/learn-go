@@ -13,7 +13,7 @@ const (
 )
 
 const (
-	userMessage = "请帮我查询合肥的天气预报，合肥的经度是116.3974673500868，纬度是39.90873966065374"
+	userMessage = "请查询/Users/panwei/Downloads/working/2025.10目录下的文件并展示"
 	sysMessage  = ""
 )
 
@@ -27,15 +27,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// 查询出所有的工具信息
-	toolCalls, err := llmCli.listToolCalls()
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println(toolCalls)
-
-	// 查询合肥的天气
-	contents, err := llmCli.Chat(toolCalls, userMessage, sysMessage)
+	// 发起对话
+	contents, err := llmCli.Chat(userMessage, sysMessage)
 	if err != nil {
 		log.Fatal(err)
 	}
