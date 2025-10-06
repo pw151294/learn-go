@@ -3,10 +3,11 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/goccy/go-json"
-	"github.com/mark3labs/mcp-go/mcp"
 	"io"
 	"net/http"
+
+	"github.com/goccy/go-json"
+	"github.com/mark3labs/mcp-go/mcp"
 )
 
 const (

@@ -1,13 +1,15 @@
 package main
 
 import (
-	"fmt"
+	"log"
+
 	"github.com/mark3labs/mcp-go/server"
 )
 
 const (
 	mcpServerName    = "Weather Demo"
 	mcpServerVersion = "1.0.0"
+	mcpServerAddr    = "localhost:8888"
 )
 
 func main() {
@@ -20,7 +22,8 @@ func main() {
 	)
 
 	s.AddTool(weatherForcastTool(), callForecast)
-	if err := server.ServeStdio(s); err != nil {
-		fmt.Printf("Error serving stdio: %s\n", err)
+	httpServer := server.NewStreamableHTTPServer(s)
+	if err := httpServer.Start(mcpServerAddr); err != nil {
+		log.Fatalf("Server failed to start: %v", err)
 	}
 }
