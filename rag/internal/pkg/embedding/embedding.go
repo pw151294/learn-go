@@ -10,8 +10,6 @@ import (
 	"iflytek.com/weipan4/learn-go/rag/configs"
 )
 
-const embeddingModelName = "BAAI/bge-m3"
-
 // EmbeddingClient defines the interface for creating text embeddings.
 type EmbeddingClient interface {
 	// CreateEmbedding creates a vector embedding for the given text.
@@ -47,7 +45,6 @@ func NewOpenAIEmbeddingClient() (EmbeddingClient, error) {
 	}
 	return &openAIEmbeddingClient{
 		client: &client,
-		model:  embeddingModelName,
 	}, nil
 }
 
@@ -73,7 +70,46 @@ func (e *openAIEmbeddingClient) CreateEmbedding(ctx context.Context, text string
 
 // CreateEmbeddings creates vector embeddings for a slice of texts.
 func (e *openAIEmbeddingClient) CreateEmbeddings(ctx context.Context, texts []string) ([][]float32, error) {
-	return nil, fmt.Errorf("embedding generation returned no vectors")
+	if len(texts) == 0 {
+		return nil, errors.New("no texts provided for embedding")
+	}
+
+	// 构建输入参数 - 转换为接口切片
+	inputs := make([]any, len(texts))
+	for i, text := range texts {
+		inputs[i] = text
+	}
+
+	// 调用 OpenAI Embedding API
+	params := openai.EmbeddingNewParams{
+		Input:          openai.EmbeddingNewParamsInputUnion{OfArrayOfStrings: texts},
+		Model:          openai.EmbeddingModelTextEmbeddingAda002,
+		Dimensions:     openai.Int(1),
+		EncodingFormat: openai.EmbeddingNewParamsEncodingFormatFloat,
+		User:           openai.String("user-1234"),
+	}
+
+	embedding, err := e.client.Embeddings.New(ctx, params)
+	if err != nil {
+		return nil, fmt.Errorf("failed to create embeddings: %w", err)
+	}
+
+	// 提取向量数据
+	if len(embedding.Data) != len(texts) {
+		return nil, fmt.Errorf("expected %d embeddings, got %d", len(texts), len(embedding.Data))
+	}
+
+	result := make([][]float32, len(embedding.Data))
+	for i, data := range embedding.Data {
+		// 将 float64 转换为 float32
+		vec := make([]float32, len(data.Embedding))
+		for j, val := range data.Embedding {
+			vec[j] = float32(val)
+		}
+		result[i] = vec
+	}
+
+	return result, nil
 }
 
 // GetEmbeddingEngine returns the model name used for embeddings.
