@@ -1,0 +1,26 @@
+2025-11-19T09:48:49.820+0800	INFO	loggers/logger.go:188	开始初始化 Weaviate 客户端
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	Weaviate 客户端创建成功，开始检查服务状态
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	Weaviate 客户端初始化完成
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	embedding store task 4 start
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	embedding store task 1 start
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	embedding store task 2 start
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	embedding store task 3 start
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	embedding task 3 start
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	embedding task 4 start
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	embedding task 1 start
+2025-11-19T09:48:49.833+0800	INFO	loggers/logger.go:188	embedding task 2 start
+2025-11-19T09:48:52.834+0800	INFO	loggers/logger.go:188	begin text splitting task
+2025-11-19T09:48:55.834+0800	INFO	loggers/logger.go:188	begin text splitting task
+2025-11-19T09:48:56.460+0800	INFO	loggers/logger.go:188	shutting down gracefully ......
+2025-11-19T09:50:10.524+0800	INFO	loggers/logger.go:188	开始初始化 Weaviate 客户端
+2025-11-19T09:50:10.530+0800	INFO	loggers/logger.go:188	Weaviate 客户端创建成功，开始检查服务状态
+2025-11-19T09:50:10.530+0800	INFO	loggers/logger.go:188	Weaviate 客户端初始化完成
+2025-11-19T09:50:10.530+0800	INFO	loggers/logger.go:188	embedding store task 4 start
+2025-11-19T09:50:10.531+0800	INFO	loggers/logger.go:188	embedding store task 1 start
+2025-11-19T09:50:10.531+0800	INFO	loggers/logger.go:188	embedding store task 2 start
+2025-11-19T09:50:10.531+0800	INFO	loggers/logger.go:188	embedding store task 3 start
+2025-11-19T09:50:10.531+0800	INFO	loggers/logger.go:188	embedding task 1 start
+2025-11-19T09:50:10.531+0800	INFO	loggers/logger.go:188	embedding task 3 start
+2025-11-19T09:50:10.531+0800	INFO	loggers/logger.go:188	embedding task 2 start
+2025-11-19T09:50:10.531+0800	INFO	loggers/logger.go:188	embedding task 4 start
+2025-11-19T09:50:12.921+0800	INFO	loggers/logger.go:188	shutting down gracefully ......

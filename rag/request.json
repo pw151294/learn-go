@@ -1,0 +1,21 @@
+{
+  "subject_id": "1",
+  "publish_status": "PENDING",
+  "name": "es检索",
+  "description": "es测试全文/混合检索",
+  "data_source_type": null,
+  "indexing_technique": "high_quality",
+  "created_by": "1",
+  "updated_by": "1",
+  "embedding_model": "BAAI/bge-m3",
+  "embedding_model_provider": "siliconflow",
+  "llm_model": null,
+  "llm_model_provider": null,
+  "retrieval_model": "{\"topK\":3,\"weights\":0.0,\"searchMethod\":\"full_text_search\",\"rerankingMode\":\"weighted_score\",\"rerankingEnable\":true,\"rerankingModel\":{\"rerankingModelName\":\"BAAI/bge-reranker-v2-m3\",\"rerankingProviderName\":\"siliconflow\"},\"hybridSearchWeights\":{\"semanticWeight\":0.8,\"fullTextWeight\":0.2},\"scoreThresholdEnabled\":true,\"scoreThreshold\":0.5}",
+  "built_in_field_enabled": true,
+  "ext_info": "{\"creatorName\":\"admin\",\"updaterName\":\"admin\"}",
+  "process_rule": "{\"defaultRule\":\"auto_segment\"}",
+  "scope": "TENANT",
+  "env": null
+}
+

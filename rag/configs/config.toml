@@ -1,0 +1,31 @@
+[mysql]
+host = "127.0.0.1"
+port = 3306
+user = "root"
+password = "panwei960801"
+dbname = "rag"
+charset = "utf8mb4"
+parseTime = true
+loc = "Local"
+
+[llm]
+api_key = "sk-ofpnjladccbemigznxvqsbuymobfzvdvomtzukbkxatbhhwr"
+base_url = "https://api.siliconflow.cn/v1"
+
+[log]
+level = "info"
+format = "console" # "json" or "console"
+output = "both" # "stdout", "file", or "both"
+log_dir = "./logs"
+log_file = "rag.log"
+max_size = 50 # megabytes
+max_backups = 10
+max_age = 7 # days
+compress = false
+enable_caller = true
+caller_skip = 1
+
+[weaviate]
+host = "localhost:9180" # Weaviate 实例的主机和端口
+scheme = "http"         # 连接协议, "http" 或 "https"
+api_key = "WVF5YThaHlkYwhGUSmCRgsX3tD5ngdN8pkih"
