@@ -54,8 +54,9 @@ func (m *LifecycleManager) RunOnce(ctx context.Context) error {
 
 // migrateAll 分页迁移所有符合条件的录制文件
 func (m *LifecycleManager) migrateAll(ctx context.Context, fromTier, toTier string, cutoff time.Time) error {
+	from := 0
 	for {
-		recs, err := m.recIdx.ListForMigration(ctx, fromTier, cutoff, 0, 100)
+		recs, err := m.recIdx.ListForMigration(ctx, fromTier, cutoff, from, 100)
 		if err != nil {
 			return err
 		}
@@ -64,12 +65,14 @@ func (m *LifecycleManager) migrateAll(ctx context.Context, fromTier, toTier stri
 		}
 		for _, rec := range recs {
 			if err := m.migrateRecording(ctx, rec, toTier); err != nil {
+				from++ // 迁移失败时偏移，避免无限重试同一条记录
 				continue
 			}
 		}
 		if len(recs) < 100 {
 			break
 		}
+		from += len(recs)
 	}
 	return nil
 }
@@ -83,8 +86,9 @@ func (m *LifecycleManager) migrateRecording(ctx context.Context, rec *models.Rec
 }
 
 func (m *LifecycleManager) deleteAll(ctx context.Context, cutoff time.Time) error {
+	from := 0
 	for {
-		recs, err := m.recIdx.ListForMigration(ctx, models.TierCold, cutoff, 0, 100)
+		recs, err := m.recIdx.ListForMigration(ctx, models.TierCold, cutoff, from, 100)
 		if err != nil {
 			return err
 		}
@@ -97,6 +101,7 @@ func (m *LifecycleManager) deleteAll(ctx context.Context, cutoff time.Time) erro
 		if len(recs) < 100 {
 			break
 		}
+		from += len(recs)
 	}
 	return nil
 }

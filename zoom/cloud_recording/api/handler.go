@@ -123,25 +123,24 @@ func (h *Handler) GetRecording(c *gin.Context) {
 		"last_access_at": time.Now().Format(time.RFC3339),
 	})
 
-	recs, _, err := h.recIdx.Search(c.Request.Context(), &models.SearchQuery{Keyword: id, Page: 1, Size: 1})
-	if err != nil || len(recs) == 0 {
+	rec, err := h.recIdx.GetByID(c.Request.Context(), id)
+	if err != nil || rec == nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "not found"})
 		return
 	}
-	c.JSON(http.StatusOK, recs[0])
+	c.JSON(http.StatusOK, rec)
 }
 
 // DeleteRecording DELETE /api/recordings/:id
 func (h *Handler) DeleteRecording(c *gin.Context) {
 	id := c.Param("id")
 
-	recs, _, err := h.recIdx.Search(c.Request.Context(), &models.SearchQuery{Keyword: id, Page: 1, Size: 1})
-	if err != nil || len(recs) == 0 {
+	rec, err := h.recIdx.GetByID(c.Request.Context(), id)
+	if err != nil || rec == nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "not found"})
 		return
 	}
 
-	rec := recs[0]
 	if err := h.minio.DeleteObject(c.Request.Context(), rec.Bucket, rec.ObjectKey); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
@@ -178,13 +177,12 @@ func (h *Handler) PlayRecording(c *gin.Context) {
 		return
 	}
 
-	recs, _, err := h.recIdx.Search(c.Request.Context(), &models.SearchQuery{Keyword: id, Page: 1, Size: 1})
-	if err != nil || len(recs) == 0 {
+	rec, err := h.recIdx.GetByID(c.Request.Context(), id)
+	if err != nil || rec == nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "not found"})
 		return
 	}
 
-	rec := recs[0]
 	presignedURL, err := h.minio.GetPresignedURL(c.Request.Context(), rec.Bucket, rec.ObjectKey, time.Hour)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})

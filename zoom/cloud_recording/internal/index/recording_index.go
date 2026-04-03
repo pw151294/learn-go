@@ -125,6 +125,26 @@ func (r *RecordingIndex) Search(ctx context.Context, query *models.SearchQuery) 
 	return recordings, total, nil
 }
 
+// GetByID 根据 recording_id 精确查询录制文件
+func (r *RecordingIndex) GetByID(ctx context.Context, id string) (*models.Recording, error) {
+	query := map[string]interface{}{
+		"query": map[string]interface{}{
+			"term": map[string]interface{}{
+				"recording_id": id,
+			},
+		},
+		"size": 1,
+	}
+	sources, _, err := r.es.Search(ctx, query)
+	if err != nil {
+		return nil, err
+	}
+	if len(sources) == 0 {
+		return nil, nil
+	}
+	return sourceToRecording(sources[0])
+}
+
 // ListForMigration 查询指定状态且创建时间早于 beforeTime 的录制文件
 func (r *RecordingIndex) ListForMigration(ctx context.Context, status string, beforeTime time.Time, from, size int) ([]*models.Recording, error) {
 	esQuery := map[string]interface{}{
