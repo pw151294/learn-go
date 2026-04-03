@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func updateSlice(s []int) {
 	s[0] = 100
@@ -69,6 +72,7 @@ func main() {
 	fmt.Println("arr[:6]=", arr[:6])
 	fmt.Println("arr[:]=", arr[:])
 	fmt.Println("arr[2:]=", arr[2:])
+	fmt.Println(slices.Contains(arr, 2))
 	add(8, &arr)
 	modify(7, 10, &arr)
 	fmt.Println("arr=", arr)

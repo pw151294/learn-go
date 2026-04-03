@@ -2,7 +2,6 @@ package fib
 
 import (
 	"fmt"
-	"iflytek.com/weipan4/learn-go/interface/readwrite"
 	"io"
 	"strings"
 )
@@ -32,6 +31,4 @@ func main() {
 	for i := 0; i < 10; i++ {
 		fmt.Println(f())
 	}
-	var fb intGen = Fibonacci()
-	readwrite.PrintFileContents(fb)
 }

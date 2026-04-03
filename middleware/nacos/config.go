@@ -3,6 +3,12 @@ package nacos
 import (
 	"encoding/json"
 	"fmt"
+	"math/rand"
+	"os"
+	"sort"
+	"strings"
+	"time"
+
 	"github.com/nacos-group/nacos-sdk-go/v2/model"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
 	"github.com/redis/go-redis/v9"
@@ -11,11 +17,6 @@ import (
 	"iflytek.com/weipan4/learn-go/logger/zap"
 	"iflytek.com/weipan4/learn-go/net/host"
 	go_redis "iflytek.com/weipan4/learn-go/storage/redis/go-redis"
-	"math/rand"
-	"os"
-	"sort"
-	"strings"
-	"time"
 )
 
 var (
