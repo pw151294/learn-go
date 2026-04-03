@@ -3,6 +3,7 @@ package lifecycle
 import (
 	"context"
 	"fmt"
+	"log"
 	"time"
 
 	"iflytek.com/weipan4/learn-go/zoom/cloud_recording/configs"
@@ -107,6 +108,11 @@ func (m *LifecycleManager) deleteAll(ctx context.Context, cutoff time.Time) erro
 }
 
 func (m *LifecycleManager) deleteRecording(ctx context.Context, rec *models.Recording) {
-	m.minio.DeleteObject(ctx, rec.Bucket, rec.ObjectKey)
-	m.recIdx.UpdateTierStatus(ctx, rec.RecordingID, "deleted", "")
+	if err := m.minio.DeleteObject(ctx, rec.Bucket, rec.ObjectKey); err != nil {
+		log.Printf("delete object %s failed: %v", rec.ObjectKey, err)
+		return
+	}
+	if err := m.recIdx.UpdateTierStatus(ctx, rec.RecordingID, "deleted", ""); err != nil {
+		log.Printf("update tier status for %s failed: %v", rec.RecordingID, err)
+	}
 }

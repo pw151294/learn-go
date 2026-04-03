@@ -1,5 +1,7 @@
 package api
 
+import "iflytek.com/weipan4/learn-go/zoom/cloud_recording/internal/models"
+
 // UploadRequest 上传录制文件请求（multipart form）
 type UploadRequest struct {
 	Title    string `form:"title" binding:"required"`
@@ -26,6 +28,6 @@ type PlayURLResponse struct {
 
 // SearchResponse 搜索响应
 type SearchResponse struct {
-	Total   int         `json:"total"`
-	Records interface{} `json:"records"`
+	Total   int                `json:"total"`
+	Records []*models.Recording `json:"records"`
 }

@@ -146,7 +146,10 @@ func (h *Handler) DeleteRecording(c *gin.Context) {
 		return
 	}
 
-	h.recIdx.UpdateTierStatus(c.Request.Context(), id, "deleted", "")
+	if err := h.recIdx.UpdateTierStatus(c.Request.Context(), id, "deleted", ""); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "failed to update index: " + err.Error()})
+		return
+	}
 	c.JSON(http.StatusOK, gin.H{"message": "deleted"})
 }
 
@@ -154,7 +157,10 @@ func (h *Handler) DeleteRecording(c *gin.Context) {
 func (h *Handler) GeneratePlayURL(c *gin.Context) {
 	id := c.Param("id")
 	var req PlayURLRequest
-	c.ShouldBindJSON(&req)
+	if err := c.ShouldBindJSON(&req); err != nil {
+		// 可选字段绑定失败时使用默认值，不返回错误
+		req = PlayURLRequest{}
+	}
 
 	expiry := req.Expiry
 	if expiry <= 0 {

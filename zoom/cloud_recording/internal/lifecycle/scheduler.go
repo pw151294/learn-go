@@ -2,6 +2,7 @@ package lifecycle
 
 import (
 	"context"
+	"log"
 	"time"
 )
 
@@ -26,7 +27,9 @@ func (s *Scheduler) Start() {
 		for {
 			select {
 			case <-ticker.C:
-				s.manager.RunOnce(context.Background())
+				if err := s.manager.RunOnce(context.Background()); err != nil {
+					log.Printf("lifecycle scan failed: %v", err)
+				}
 			case <-s.stopCh:
 				return
 			}
