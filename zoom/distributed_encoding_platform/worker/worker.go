@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"math/rand"
+	"sync"
 	"time"
 
 	"iflytek.com/weipan4/learn-go/zoom/distributed_encoding_platform/config"
@@ -17,16 +18,27 @@ import (
 
 // semaphore 用带缓冲 channel 限制并发转码数
 var semaphore = make(chan struct{}, config.MaxWorkers)
+var wg sync.WaitGroup
 
-// Submit 将任务提交到 Worker Pool 异步执行（非阻塞入口）
+// Submit 将任务提交到 Worker Pool 执行。
+// 阻塞直到获取到 semaphore slot（背压控制），然后异步执行转码。
 func Submit(ctx context.Context, task *model.Task) {
+	select {
+	case semaphore <- struct{}{}:
+	case <-ctx.Done():
+		return
+	}
+	wg.Add(1)
 	go func() {
-		// 获取 semaphore slot，超过 MaxWorkers 时阻塞
-		semaphore <- struct{}{}
+		defer wg.Done()
 		defer func() { <-semaphore }()
-
 		process(ctx, task)
 	}()
+}
+
+// Wait 等待所有活跃 Worker 完成
+func Wait() {
+	wg.Wait()
 }
 
 // process 执行单个任务的转码逻辑
@@ -65,7 +77,7 @@ func handleFailure(ctx context.Context, task *model.Task, reason string) {
 	task.Error = reason
 	log.Printf("[Worker] task %s failed (retries=%d): %s", task.ID, task.Retries, reason)
 
-	if task.Retries >= config.MaxRetries {
+	if task.Retries > config.MaxRetries {
 		// 超过最大重试次数，进入死信队列
 		task.TransitionTo(model.StatusFailed)
 		store.Save(task)

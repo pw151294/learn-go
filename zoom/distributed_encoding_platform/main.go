@@ -14,6 +14,7 @@ import (
 	"iflytek.com/weipan4/learn-go/zoom/distributed_encoding_platform/dlq"
 	"iflytek.com/weipan4/learn-go/zoom/distributed_encoding_platform/producer"
 	"iflytek.com/weipan4/learn-go/zoom/distributed_encoding_platform/scheduler"
+	"iflytek.com/weipan4/learn-go/zoom/distributed_encoding_platform/worker"
 )
 
 func main() {
@@ -48,6 +49,9 @@ func main() {
 		<-ctx.Done()
 		log.Println("[Main] shutting down HTTP server...")
 		server.Shutdown(context.Background())
+		log.Println("[Main] waiting for workers to finish...")
+		worker.Wait()
+		log.Println("[Main] all workers done")
 	}()
 
 	log.Println("[Main] transcoding platform started on :8080")

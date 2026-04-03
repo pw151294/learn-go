@@ -52,6 +52,13 @@ func submitTask(w http.ResponseWriter, r *http.Request) {
 	if req.Priority == "" {
 		req.Priority = "normal"
 	}
+	// 提前验证 priority 合法性，避免写入脏数据到 store
+	switch req.Priority {
+	case "high", "normal", "low":
+	default:
+		http.Error(w, "invalid priority: must be high, normal, or low", http.StatusBadRequest)
+		return
+	}
 
 	task := &model.Task{
 		ID:        uuid.New().String(),
