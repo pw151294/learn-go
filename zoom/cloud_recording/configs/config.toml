@@ -1,0 +1,32 @@
+[server]
+port = 8080
+host = "0.0.0.0"
+
+[minio]
+endpoint = "localhost:9000"
+access_key_id = "minioadmin"
+secret_access_key = "minioadmin"
+use_ssl = false
+hot_bucket = "rec-hot"
+warm_bucket = "rec-warm"
+cold_bucket = "rec-cold"
+
+[es]
+url = "http://localhost:9200"
+index_name = "cloud-recordings"
+username = ""
+password = ""
+
+[cdn]
+enabled = false
+base_url = "https://cdn.example.com"
+
+[auth]
+sign_secret = "your-secret-key-here"
+default_expiry = 3600
+
+[lifecycle]
+hot_days = 7
+warm_days = 30
+retention_days = 365
+scan_interval = 3600
